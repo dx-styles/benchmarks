@@ -14,7 +14,9 @@
     "bench:wyw": "node harness/cli.ts wyw",
     "prepare-lanes": "node harness/cli.ts prepare",
     "report": "node harness/cli.ts report",
-    "check-release-age": "node harness/release-age.ts"
+    "check-release-age": "node harness/release-age.ts",
+    "bench:diag": "node harness/cli.ts diag",
+    "summary": "node harness/cli.ts summary"
   },
   "devDependencies": {
     "playwright": "1.64.1"

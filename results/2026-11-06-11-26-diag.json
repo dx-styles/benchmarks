@@ -1,0 +1,786 @@
+{
+  "group": "diag",
+  "environment": {
+    "date": "2026-11-06 11:34 UTC",
+    "machine": "Apple M3 Max",
+    "cores": 16,
+    "memoryGb": 64,
+    "os": "macOS 26.6.2",
+    "node": "24.4.1",
+    "npm": "11.4.2",
+    "chromium": "156.0.8078.4",
+    "benchCommit": "ce2225e",
+    "cards": 120,
+    "rounds": 7,
+    "maxLoad": 8
+  },
+  "lanes": [
+    {
+      "id": "market-dx-styles",
+      "group": "market",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.5.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "market-linaria",
+      "group": "market",
+      "lib": "linaria",
+      "layout": "app",
+      "label": "Linaria 8.3.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "market-compiled",
+      "group": "market",
+      "lib": "compiled",
+      "layout": "app",
+      "label": "Compiled 2.0.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      }
+    },
+    {
+      "id": "diag-linaria-static-vars",
+      "group": "diag",
+      "lib": "linaria",
+      "layout": "app",
+      "label": "Linaria 8.3.0, static CSS variables",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "staticVars": true
+      }
+    },
+    {
+      "id": "diag-compiled-collision-resistant",
+      "group": "diag",
+      "lib": "compiled",
+      "layout": "app",
+      "label": "Compiled 2.0.0, collisionResistantHash",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      },
+      "options": {
+        "collisionResistantHash": true
+      }
+    }
+  ],
+  "builds": [
+    {
+      "lane": "market-dx-styles",
+      "round": 0,
+      "cold": 847.1222089999937,
+      "warm": 666.2270410000056,
+      "load": 8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 0,
+      "cold": 2092.915416999982,
+      "warm": 1912.6954160000023,
+      "load": 8,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 0,
+      "cold": 6615.794083999994,
+      "warm": 5977.213625000004,
+      "load": 8.3,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 0,
+      "cold": 387.5437920000113,
+      "warm": 392.6293749999895,
+      "load": 8.1,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 0,
+      "cold": 6101.276500000007,
+      "warm": 5897.315915999992,
+      "load": 8.1,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 1,
+      "cold": 5895.118749999994,
+      "warm": 6081.56158400001,
+      "load": 7.8,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 1,
+      "cold": 377.37987499998417,
+      "warm": 385.01008300000103,
+      "load": 7.8,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 1,
+      "cold": 5826.675707999995,
+      "warm": 5866.348333000002,
+      "load": 7.8,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 1,
+      "cold": 1907.4303749999963,
+      "warm": 1892.3980419999862,
+      "load": 7.3,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 1,
+      "cold": 686.3023340000072,
+      "warm": 653.0753330000152,
+      "load": 7.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 2,
+      "cold": 661.8347500000091,
+      "warm": 678.9452920000185,
+      "load": 7.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 2,
+      "cold": 1874.2049169999955,
+      "warm": 1871.531209000008,
+      "load": 7.3,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 2,
+      "cold": 6164.420416999987,
+      "warm": 5893.6882500000065,
+      "load": 7.1,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 2,
+      "cold": 388.32245799998054,
+      "warm": 364.0600409999897,
+      "load": 7.2,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 2,
+      "cold": 6086.600165999989,
+      "warm": 5826.268916000001,
+      "load": 7.2,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 3,
+      "cold": 6106.149750000011,
+      "warm": 5934.246625,
+      "load": 7.3,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 3,
+      "cold": 382.61624999999185,
+      "warm": 374.88641700000153,
+      "load": 7.6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 3,
+      "cold": 5887.3399999999965,
+      "warm": 5842.930584000016,
+      "load": 7.6,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 3,
+      "cold": 2046.4292500000156,
+      "warm": 1876.9211249999935,
+      "load": 7.4,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 3,
+      "cold": 840.2651250000054,
+      "warm": 657.7818749999569,
+      "load": 7.2,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 4,
+      "cold": 645.2075419999892,
+      "warm": 661.1766250000219,
+      "load": 7.2,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 4,
+      "cold": 1863.7388330000103,
+      "warm": 1849.8087089999462,
+      "load": 7.2,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 4,
+      "cold": 5914.044874999963,
+      "warm": 5937.930374999996,
+      "load": 7.1,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 4,
+      "cold": 374.5464169999468,
+      "warm": 374.7598749999888,
+      "load": 9.9,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 4,
+      "cold": 5857.5978339999565,
+      "warm": 5905.451416999975,
+      "load": 9.9,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 5,
+      "cold": 5737.355207999994,
+      "warm": 5566.020957999979,
+      "load": 7.7,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 5,
+      "cold": 359.4029159999918,
+      "warm": 371.7155419999617,
+      "load": 7.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 5,
+      "cold": 6223.105291999993,
+      "warm": 5938.451166999992,
+      "load": 7.7,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 5,
+      "cold": 1888.2088329999824,
+      "warm": 1892.5596670000232,
+      "load": 7.6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 5,
+      "cold": 665.9738750000251,
+      "warm": 669.2760840000119,
+      "load": 7.4,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 6,
+      "cold": 652.3913750000065,
+      "warm": 660.7843750000466,
+      "load": 7.4,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 6,
+      "cold": 1827.502208000049,
+      "warm": 1853.2750409999862,
+      "load": 7.4,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 6,
+      "cold": 6246.124165999994,
+      "warm": 5667.1197909999755,
+      "load": 7.3,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 6,
+      "cold": 376.29879199998686,
+      "warm": 384.0818750000326,
+      "load": 7.9,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 6,
+      "cold": 5700.613459000015,
+      "warm": 5767.036625000008,
+      "load": 7.9,
+      "hash": "cf21626c351e"
+    }
+  ],
+  "sizes": {
+    "market-dx-styles": {
+      "jsRaw": 301559,
+      "jsGzip": 81719,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "4d8fcb4a3285"
+    },
+    "market-linaria": {
+      "jsRaw": 287341,
+      "jsGzip": 84026,
+      "cssRaw": 373779,
+      "cssGzip": 23841,
+      "hash": "29d0bb09b539"
+    },
+    "market-compiled": {
+      "jsRaw": 386698,
+      "jsGzip": 85611,
+      "cssRaw": 22297,
+      "cssGzip": 5267,
+      "hash": "340c4cea3ce0"
+    },
+    "diag-linaria-static-vars": {
+      "jsRaw": 287341,
+      "jsGzip": 84026,
+      "cssRaw": 373779,
+      "cssGzip": 23841,
+      "hash": "29d0bb09b539"
+    },
+    "diag-compiled-collision-resistant": {
+      "jsRaw": 408162,
+      "jsGzip": 86447,
+      "cssRaw": 23280,
+      "cssGzip": 5854,
+      "hash": "cf21626c351e"
+    }
+  },
+  "browser": {
+    "market-dx-styles": {
+      "samples": [
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.9
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.9
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.9
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.9
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 10.8
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 10.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 10.6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 10.6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 10.3
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 10.3
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-linaria": {
+      "samples": [
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.9
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.9
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 8.9
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 10.8
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 10.8
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 10.8
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 10.6
+        },
+        {
+          "fcp": 156,
+          "lcp": null,
+          "load": 10.6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 10.3
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 10.3
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-compiled": {
+      "samples": [
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.9
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.9
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.9
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 10.8
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 10.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 10.8
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 10.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 10.6
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 10.6
+        },
+        {
+          "fcp": 180,
+          "lcp": 180,
+          "load": 10.3
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 5,
+      "examples": [
+        "#2056: A|inline|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto  ≠  A|inline|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto",
+        "#2110: A|inline|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto  ≠  A|inline|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto",
+        "#3633: A|block|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|94.0938px|18px  ≠  A|block|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|94.0938px|18px",
+        "#3634: A|block|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|14px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|21px|none|1|none|107.406px|21px  ≠  A|block|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|14px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|21px|none|1|none|107.406px|21px",
+        "#3635: A|block|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|16px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|24px|none|1|none|115.406px|24px  ≠  A|block|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|16px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|24px|none|1|none|115.406px|24px"
+      ]
+    },
+    "diag-linaria-static-vars": {
+      "samples": [
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 8.8
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 8.9
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 8.9
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 10.8
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 10.8
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 10.8
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 10.6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 10.6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 10.6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 10.3
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-compiled-collision-resistant": {
+      "samples": [
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.8
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.9
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.9
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 10.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 10.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 10.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 10.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 10.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 10.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 10.3
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    }
+  }
+}

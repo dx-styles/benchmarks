@@ -18,8 +18,9 @@ npm run bench
 Node 24 or newer. A full run installs 26 lanes (about 2 GB under `work.noindex/`), waits 90 s,
 and then takes about an hour; it writes `results/<time>-market.{json,md}`,
 `results/<time>-wyw.{json,md}` and `RESULTS.md`. `npm run bench:market` and `npm run bench:wyw`
-run one half. Options: `--rounds=7`, `--fcp=10`, `--max-load=8`, `--no-install` (reuse
-installed lanes), `--lanes=<id,…>`.
+run one half; `npm run bench:diag` runs the two diagnostic lanes next to the lanes they explain.
+Options: `--rounds=7`, `--fcp=10`, `--max-load=8`, `--no-install` (reuse installed lanes),
+`--lanes=<id,…>`.
 
 ## The scene
 
@@ -92,6 +93,49 @@ The `wyw` half builds the dx-styles scene on wyw-in-js 2.3.0, 2.4.4, 2.5.1, 2.6.
 dx-styles 1.3.0 (the release whose range accepts all of them), and adds dx-styles 1.4.1 on 2.4.4
 and 2.7.1 and dx-styles 1.5.0 on 2.7.1 (1.5.0 requires 2.7.1). Each combination runs in two
 layouts: the per-component modules above, and all styles in one module.
+
+## What the run of 2026-11-06 shows
+
+Full tables: [RESULTS.md](./RESULTS.md). Apple M3 Max, 16 cores, macOS 26.6.2, Node 24.4.1;
+medians of 7 warm builds.
+
+- **dx-styles across wyw-in-js releases.** With dx-styles 1.3.0 and per-component modules the
+  build takes 1.43 s on wyw-in-js 2.3.0, 1.35 s on 2.4.4, 0.91 s on 2.5.1 and 0.68 s on 2.6.0
+  and 2.7.1; with one styles module, 1.94 s → 1.78 → 1.34 → 0.78 → 0.78 s. Every step but 2.6.0
+  → 2.7.1 is outside the noise (the ranges do not overlap), and each dx-styles release builds a
+  byte-identical bundle on every wyw-in-js release.
+- **dx-styles 1.4.1 on 2.4.4 → 1.5.0 on 2.7.1:** 1.34 s → 0.68 s (−49%) with per-component
+  modules, 1.79 s → 0.78 s (−56%) with one module. The gain comes from the engine: on 2.7.1,
+  dx-styles 1.4.1 and 1.5.0 build byte-identical bundles in the same time, and 1.5.0 requires
+  wyw-in-js 2.7.1.
+- **Libraries (warm build):** styled-components 0.16 s, Emotion 0.17 s, Panda 0.21 s, next-yak
+  0.30 s, vanilla-extract 0.56 s, CSS Modules 0.66 s, dx-styles 0.68 s, Linaria 1.86 s, StyleX
+  2.06 s, Compiled 5.93 s.
+- **The Linaria lane** runs on the same engine as dx-styles, wyw-in-js 2.7.1. Its gap comes from
+  the token model of the port: its styles interpolate tokens from a JS object that the engine
+  evaluates for each of the 41 style modules, while dx-styles declares a token contract that its
+  processors resolve without evaluation. Written as static CSS variables, the same Linaria scene
+  builds in 0.37 s with an output of the same size (`npm run bench:diag`).
+- **Render parity:** every lane but Compiled renders all 3,642 elements with the same computed
+  styles as dx-styles. With its default class hash, Compiled 2.0.0 gives two atomic declarations,
+  `color: var(--tk-color-danger600)` and `color: var(--tk-color-info800)`, the same class name, so
+  5 elements get the wrong color; with its opt-in `collisionResistantHash` it renders the same as
+  the others.
+
+## Where dx-styles does not win
+
+- **Build time.** The runtime libraries do no build-time extraction (styled-components 0.16 s,
+  Emotion 0.17 s); Panda (0.21 s), next-yak (0.30 s) and vanilla-extract (0.56 s) build faster
+  than dx-styles (0.68 s), and CSS Modules with no library at all (0.66 s) is level with it.
+  Linaria with static CSS variables (0.37 s) shows what the dx-styles processors (token
+  contract, recipes) cost on top of the shared engine: about 0.3 s on this scene.
+- **Size.** dx-styles ships 99.4 KB gzip in total, more than the atomic engines (Compiled
+  88.7 KB, Panda 89.2 KB, StyleX 89.5 KB), Emotion (93.5 KB), vanilla-extract (94.9 KB),
+  next-yak (96.3 KB) and styled-components (97.2 KB). Its CSS is 382 KB raw against 314 KB for
+  vanilla-extract, which hashes its token variable names; dx-styles keeps them readable
+  (`--tk-color-accent600`) because they are the theming contract.
+- **First paint.** dx-styles (162 ms) is level with CSS Modules, vanilla-extract and Linaria
+  (156–160 ms), not ahead of them; the runtime libraries paint later (208–212 ms).
 
 ## Caveats
 
