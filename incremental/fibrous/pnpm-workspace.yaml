@@ -1,0 +1,4 @@
+overrides:
+  "@wyw-in-js/processor-utils": 2.7.0
+  "@wyw-in-js/shared": 2.7.0
+  schema-utils: 4.3.3
