@@ -66,7 +66,8 @@ const uiSource = (imports: string[], spreads: string[]): string =>
     "",
   ].join("\n");
 
-export const generate = (layout: Layout): LaneSource => {
+/** `parallel`: wyw-in-js worker threads (diagnostic). */
+export const generate = (layout: Layout, options: Record<string, boolean | number> = {}): LaneSource => {
   const files: Record<string, string> = {};
   if (layout === "single") {
     files["src/styles.ts"] = [
@@ -103,7 +104,9 @@ export const generate = (layout: Layout): LaneSource => {
     files,
     vite: {
       imports: ['import wyw from "@wyw-in-js/vite";'],
-      plugins: ["wyw({ displayName: false, prefixer: false, processors: { dxStyles: { minifyClassNames: true } } })"],
+      plugins: [
+        `wyw({ displayName: false, prefixer: false, processors: { dxStyles: { minifyClassNames: true } }${options.parallel !== undefined ? `, parallel: ${options.parallel}` : ""} })`,
+      ],
     },
   };
 };

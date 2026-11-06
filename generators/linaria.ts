@@ -20,8 +20,11 @@ const slotSource = (slot: Slot): string => {
   return `export const ${slot.name} = {\n${entries.join("\n")}\n};`;
 };
 
-/** `staticVars`: write tokens as static `var(--…)` text instead of interpolating `t` (diagnostic). */
-export const generate = (_layout?: unknown, options: Record<string, boolean> = {}): LaneSource => {
+/**
+ * Diagnostic options: `staticVars` writes tokens as static `var(--…)` text instead of
+ * interpolating `t`; `parallel` turns on wyw-in-js worker threads.
+ */
+export const generate = (_layout?: unknown, options: Record<string, boolean | number> = {}): LaneSource => {
   tokenRef = options.staticVars ? plainVar : interp;
   const files: Record<string, string> = {};
   if (!options.staticVars) files["src/styles/tokens.ts"] = [HEADER(LIB), `export const t = ${plainVarObject()};`, ""].join("\n");
@@ -53,7 +56,7 @@ export const generate = (_layout?: unknown, options: Record<string, boolean> = {
     files,
     vite: {
       imports: ['import wyw from "@wyw-in-js/vite";'],
-      plugins: ["wyw({ displayName: false, prefixer: false })"],
+      plugins: [`wyw({ displayName: false, prefixer: false${options.parallel !== undefined ? `, parallel: ${options.parallel}` : ""} })`],
     },
   };
 };

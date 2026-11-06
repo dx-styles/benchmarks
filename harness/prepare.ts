@@ -94,7 +94,7 @@ export interface PreparedLane {
 
 const generatorFor = async (lib: string) =>
   (await import(join(ROOT, "generators", `${lib}.ts`))) as {
-    generate: (layout: Lane["layout"], options: Record<string, boolean>) => LaneSource;
+    generate: (layout: Lane["layout"], options: Record<string, boolean | number>) => LaneSource;
   };
 
 /** (Re)write the lane's sources; keeps node_modules. */

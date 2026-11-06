@@ -18,7 +18,7 @@ import { cpus, totalmem } from "node:os";
 import { join } from "node:path";
 
 import { fingerprintDiff, measureBrowser } from "./browser.ts";
-import { CARDS, measureSize, type SizeMetrics } from "./build.ts";
+import { CARDS, measureSize, parallelFallbacks, type SizeMetrics } from "./build.ts";
 import { DIAG_COMPARE, type Lane, LANES } from "./lanes.ts";
 import { measureBuilds } from "./measure.ts";
 import { installLane, type PreparedLane, writeLane } from "./prepare.ts";
@@ -110,6 +110,11 @@ const sizes = async (prepared: PreparedLane[]): Promise<Record<string, SizeMetri
 };
 
 const runMarket = async (prepared: PreparedLane[], group: RunResult["group"] = "market"): Promise<RunResult> => {
+  for (const p of prepared.filter((x) => x.lane.options?.parallel !== undefined)) {
+    const fallbacks = await parallelFallbacks(p);
+    if (fallbacks.length > 0) throw new Error(`${p.lane.id}: wyw-in-js did not use its workers:\n${fallbacks.join("\n")}`);
+    log(`[parallel] ${p.lane.id}: no fallback reported, transforms ran in workers`);
+  }
   const builds = await measureBuilds(prepared, { rounds, maxLoad, maxWait });
   const size = await sizes(prepared);
   const browser = await measureBrowser(prepared, fcpSamples);
@@ -146,7 +151,7 @@ const summary = async (): Promise<void> => {
     parts.push(
       "## Diagnostics",
       "",
-      "Two variants that explain report lanes, measured next to them: Linaria with its tokens written as static CSS variables, and Compiled with its opt-in `collisionResistantHash`.",
+      "Variants that explain report lanes, measured next to them: Linaria with its tokens written as static CSS variables, Compiled with its opt-in `collisionResistantHash`, and wyw-in-js transforms in worker threads (`parallel`, experimental since 2.6.0; `true` means min(4, cores − 1) workers).",
       "",
       diag,
     );

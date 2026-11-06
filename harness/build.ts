@@ -61,3 +61,14 @@ export const measureSize = async (prepared: PreparedLane): Promise<SizeMetrics> 
   size.hash = hash.digest("hex").slice(0, 12);
   return size;
 };
+
+/**
+ * One build with warnings shown: wyw-in-js reports through Vite's logger (a warning) when
+ * it keeps transforms on the main thread instead of the workers `parallel` asked for.
+ */
+export const parallelFallbacks = async (prepared: PreparedLane): Promise<string[]> => {
+  const { dir } = prepared;
+  const env = { NODE_ENV: "production", BENCH_CARDS: String(CARDS) };
+  const result = await run(process.execPath, [join(dir, "node_modules", "vite", "bin", "vite.js"), "build", "--logLevel", "warn"], { cwd: dir, env });
+  return `${result.stdout}\n${result.stderr}`.split("\n").filter((line) => line.includes("[wyw-in-js]"));
+};

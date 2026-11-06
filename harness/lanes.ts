@@ -72,7 +72,7 @@ export interface Lane {
   /** market and wyw make the report; diag lanes answer one question and run only on `diag`. */
   group: "market" | "wyw" | "diag";
   /** Generator options of a diagnostic variant. */
-  options?: Record<string, boolean>;
+  options?: Record<string, boolean | number>;
   /** Generator module name under generators/. */
   lib: string;
   layout: Layout;
@@ -170,10 +170,23 @@ export const LANES: Lane[] = [
     }),
     options: { collisionResistantHash: true },
   },
+  // wyw-in-js ≥ 2.6.0 can run transforms in worker threads (`parallel`, experimental):
+  // `true` uses min(4, cores − 1) workers.
+  { ...dxLane("diag", "app", "1.5.0", "2.7.1"), id: "diag-dx-styles-parallel", label: "dx-styles 1.5.0, parallel", options: { parallel: true } },
+  { ...dxLane("diag", "app", "1.5.0", "2.7.1"), id: "diag-dx-styles-parallel-8", label: "dx-styles 1.5.0, parallel: 8", options: { parallel: 8 } },
+  { ...dxLane("diag", "single", "1.5.0", "2.7.1"), id: "diag-dx-styles-single-parallel", label: "dx-styles 1.5.0, one module, parallel", options: { parallel: true } },
+  {
+    ...lane("diag-linaria-parallel", "diag", "linaria", "app", "Linaria 8.3.0, parallel", { "@linaria/core": "8.3.0", ...linaria.deps }, linaria.overrides),
+    options: { parallel: true },
+  },
+  {
+    ...lane("diag-linaria-static-vars-parallel", "diag", "linaria", "app", "Linaria 8.3.0, static CSS variables, parallel", { "@linaria/core": "8.3.0", ...linaria.deps }, linaria.overrides),
+    options: { staticVars: true, parallel: true },
+  },
 ];
 
 /** The report lanes a diagnostic run measures next to the diag lanes. */
-export const DIAG_COMPARE = ["market-dx-styles", "market-linaria", "market-compiled"];
+export const DIAG_COMPARE = ["market-dx-styles", "market-linaria", "market-compiled", "wyw-single-dx1.5.0-wyw2.7.1"];
 
 export const laneById = (id: string): Lane => {
   const found = LANES.find((l) => l.id === id);

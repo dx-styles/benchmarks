@@ -30,7 +30,7 @@ const slotSource = (slot: Slot): string => {
 };
 
 /** `collisionResistantHash`: Compiled's opt-in longer class hash (diagnostic). */
-export const generate = (_layout?: unknown, options: Record<string, boolean> = {}): LaneSource => {
+export const generate = (_layout?: unknown, options: Record<string, boolean | number> = {}): LaneSource => {
   const files: Record<string, string> = {};
   files["src/styles/tokens.ts"] = [HEADER(LIB), `export const t = ${plainVarObject()};`, ""].join("\n");
   for (const module of MODULES) {
