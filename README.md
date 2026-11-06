@@ -116,6 +116,13 @@ medians of 7 warm builds.
   evaluates for each of the 41 style modules, while dx-styles declares a token contract that its
   processors resolve without evaluation. Written as static CSS variables, the same Linaria scene
   builds in 0.37 s with an output of the same size (`npm run bench:diag`).
+- **wyw-in-js worker threads** (`parallel`, experimental since 2.6.0, measured on 2.7.1 with
+  `npm run bench:diag`) pay off where the engine evaluates a lot in every module: the Linaria
+  lane goes from 1.88 s to 1.03 s. Elsewhere they give little or cost time: dx-styles with
+  per-component modules 0.67 s → 0.58 s (the ranges touch), with one styles module 0.78 s →
+  0.99 s (one file cannot be split across workers), Linaria with static CSS variables 0.38 s →
+  0.43 s. Eight workers do no better than the default four (min(4, cores − 1)). The output is
+  byte-identical with and without workers.
 - **Render parity:** every lane but Compiled renders all 3,642 elements with the same computed
   styles as dx-styles. With its default class hash, Compiled 2.0.0 gives two atomic declarations,
   `color: var(--tk-color-danger600)` and `color: var(--tk-color-info800)`, the same class name, so

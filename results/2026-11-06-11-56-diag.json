@@ -1,0 +1,1720 @@
+{
+  "group": "diag",
+  "environment": {
+    "date": "2026-11-06 12:21 UTC",
+    "machine": "Apple M3 Max",
+    "cores": 16,
+    "memoryGb": 64,
+    "os": "macOS 26.6.2",
+    "node": "24.4.1",
+    "npm": "11.4.2",
+    "chromium": "156.0.8078.4",
+    "benchCommit": "3f6f5f2",
+    "cards": 120,
+    "rounds": 7,
+    "maxLoad": 8
+  },
+  "lanes": [
+    {
+      "id": "market-dx-styles",
+      "group": "market",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.5.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "market-linaria",
+      "group": "market",
+      "lib": "linaria",
+      "layout": "app",
+      "label": "Linaria 8.3.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "market-compiled",
+      "group": "market",
+      "lib": "compiled",
+      "layout": "app",
+      "label": "Compiled 2.0.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      }
+    },
+    {
+      "id": "wyw-single-dx1.5.0-wyw2.7.1",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "single",
+      "label": "dx-styles 1.5.0 · wyw 2.7.1",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "diag-linaria-static-vars",
+      "group": "diag",
+      "lib": "linaria",
+      "layout": "app",
+      "label": "Linaria 8.3.0, static CSS variables",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "staticVars": true
+      }
+    },
+    {
+      "id": "diag-compiled-collision-resistant",
+      "group": "diag",
+      "lib": "compiled",
+      "layout": "app",
+      "label": "Compiled 2.0.0, collisionResistantHash",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      },
+      "options": {
+        "collisionResistantHash": true
+      }
+    },
+    {
+      "id": "diag-dx-styles-parallel",
+      "group": "diag",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.5.0, parallel",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "parallel": true
+      }
+    },
+    {
+      "id": "diag-dx-styles-parallel-8",
+      "group": "diag",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.5.0, parallel: 8",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "parallel": 8
+      }
+    },
+    {
+      "id": "diag-dx-styles-single-parallel",
+      "group": "diag",
+      "lib": "dx-styles",
+      "layout": "single",
+      "label": "dx-styles 1.5.0, one module, parallel",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "parallel": true
+      }
+    },
+    {
+      "id": "diag-linaria-parallel",
+      "group": "diag",
+      "lib": "linaria",
+      "layout": "app",
+      "label": "Linaria 8.3.0, parallel",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "parallel": true
+      }
+    },
+    {
+      "id": "diag-linaria-static-vars-parallel",
+      "group": "diag",
+      "lib": "linaria",
+      "layout": "app",
+      "label": "Linaria 8.3.0, static CSS variables, parallel",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "staticVars": true,
+        "parallel": true
+      }
+    }
+  ],
+  "builds": [
+    {
+      "lane": "market-dx-styles",
+      "round": 0,
+      "cold": 920.3533749999478,
+      "warm": 672.0602080000099,
+      "load": 7.6,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 0,
+      "cold": 2149.845708000008,
+      "warm": 1916.517499999958,
+      "load": 7.6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 0,
+      "cold": 6907.412249999936,
+      "warm": 5901.402957999962,
+      "load": 7.4,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 0,
+      "cold": 1009.5710419999668,
+      "warm": 775.4452499999898,
+      "load": 8.6,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 0,
+      "cold": 580.0265829999698,
+      "warm": 384.0635839999886,
+      "load": 8.8,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 0,
+      "cold": 6579.751749999938,
+      "warm": 6304.798625000054,
+      "load": 8.8,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 0,
+      "cold": 862.8184999999357,
+      "warm": 621.0237089999719,
+      "load": 9.4,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 0,
+      "cold": 826.281500000041,
+      "warm": 613.2271250000922,
+      "load": 9.4,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 0,
+      "cold": 1199.4437920000637,
+      "warm": 1003.4921670000767,
+      "load": 9.4,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 0,
+      "cold": 1402.7369999999646,
+      "warm": 1111.0517920000711,
+      "load": 9.6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 0,
+      "cold": 628.015207999968,
+      "warm": 428.7928330000723,
+      "load": 9.6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 1,
+      "cold": 438.2537079999456,
+      "warm": 431.7953750001034,
+      "load": 7.8,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 1,
+      "cold": 980.0019170000451,
+      "warm": 950.7187919999706,
+      "load": 7.8,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 1,
+      "cold": 971.0736669999314,
+      "warm": 995.8688750000438,
+      "load": 8,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 1,
+      "cold": 612.767833000049,
+      "warm": 611.4609169999603,
+      "load": 8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 1,
+      "cold": 608.0139999999665,
+      "warm": 577.668374999892,
+      "load": 8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 1,
+      "cold": 6106.214208000107,
+      "warm": 6111.100249999901,
+      "load": 7.9,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 1,
+      "cold": 557.9465419999324,
+      "warm": 394.6901249999646,
+      "load": 8,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 1,
+      "cold": 943.9622080000117,
+      "warm": 804.0268330001272,
+      "load": 8,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 1,
+      "cold": 7288.898833000101,
+      "warm": 6506.28754200018,
+      "load": 8.4,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 1,
+      "cold": 2118.8547080000862,
+      "warm": 1879.5633749999106,
+      "load": 8.8,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 1,
+      "cold": 900.7552080000751,
+      "warm": 665.6347910000477,
+      "load": 8.9,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 2,
+      "cold": 686.3817910000216,
+      "warm": 671.7200839999132,
+      "load": 7.9,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 2,
+      "cold": 1852.4510419999715,
+      "warm": 1888.114375000121,
+      "load": 7.9,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 2,
+      "cold": 6439.049666999839,
+      "warm": 6115.053708999883,
+      "load": 7.7,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 2,
+      "cold": 940.1117079998367,
+      "warm": 793.8902920000255,
+      "load": 7.5,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 2,
+      "cold": 560.141333000036,
+      "warm": 396.640832999954,
+      "load": 7.5,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 2,
+      "cold": 6340.280458000023,
+      "warm": 6035.940084000118,
+      "load": 7.7,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 2,
+      "cold": 763.0484579999465,
+      "warm": 584.1302080000751,
+      "load": 7.9,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 2,
+      "cold": 788.8288749998901,
+      "warm": 633.3679580001626,
+      "load": 7.9,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 2,
+      "cold": 1143.0212079999037,
+      "warm": 977.9722499998752,
+      "load": 8.8,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 2,
+      "cold": 1168.0688330000266,
+      "warm": 1017.0268749999814,
+      "load": 8.8,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 2,
+      "cold": 604.6032910000067,
+      "warm": 436.0905410000123,
+      "load": 8.9,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 3,
+      "cold": 430.19612500001676,
+      "warm": 434.82666700007394,
+      "load": 7.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 3,
+      "cold": 1110.4602500000037,
+      "warm": 1206.470042000059,
+      "load": 7.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 3,
+      "cold": 995.3775420000311,
+      "warm": 993.7346659998875,
+      "load": 7.7,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 3,
+      "cold": 628.8997500000987,
+      "warm": 589.8552079999354,
+      "load": 7.6,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 3,
+      "cold": 572.6115829998162,
+      "warm": 590.7964159999974,
+      "load": 7.6,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 3,
+      "cold": 5948.630040999968,
+      "warm": 5879.062999999849,
+      "load": 7.6,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 3,
+      "cold": 377.798875000095,
+      "warm": 386.8782079999801,
+      "load": 7.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 3,
+      "cold": 785.2977080000564,
+      "warm": 776.5108749999199,
+      "load": 7.7,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 3,
+      "cold": 5943.070040999912,
+      "warm": 5942.514915999956,
+      "load": 7.7,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 3,
+      "cold": 1884.432957999874,
+      "warm": 1875.7385409998242,
+      "load": 7.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 3,
+      "cold": 826.7724999999627,
+      "warm": 676.8045409999322,
+      "load": 7.8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 4,
+      "cold": 686.2739169998094,
+      "warm": 679.8011249999981,
+      "load": 7.6,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 4,
+      "cold": 1914.747999999905,
+      "warm": 1913.6110000000335,
+      "load": 7.6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 4,
+      "cold": 6103.987000000197,
+      "warm": 6091.2161669998895,
+      "load": 7.3,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 4,
+      "cold": 779.8585410001688,
+      "warm": 775.4286249999423,
+      "load": 7.4,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 4,
+      "cold": 379.14004200021736,
+      "warm": 384.2500829999335,
+      "load": 7.4,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 4,
+      "cold": 5980.568750000093,
+      "warm": 5917.540665999986,
+      "load": 7.4,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 4,
+      "cold": 593.9576669998933,
+      "warm": 615.6957919998094,
+      "load": 7.1,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 4,
+      "cold": 581.7804580000229,
+      "warm": 618.8382079999428,
+      "load": 7.1,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 4,
+      "cold": 995.0872499998659,
+      "warm": 1027.8440829999745,
+      "load": 7.1,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 4,
+      "cold": 1015.7892499999143,
+      "warm": 1031.8371249998454,
+      "load": 9.6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 4,
+      "cold": 439.1956670000218,
+      "warm": 436.0257079999428,
+      "load": 9.6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 5,
+      "cold": 441.00612500007264,
+      "warm": 457.97329099988565,
+      "load": 7.2,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 5,
+      "cold": 972.697666999884,
+      "warm": 920.2418750000652,
+      "load": 7.2,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 5,
+      "cold": 1007.5429999998305,
+      "warm": 933.8491660000291,
+      "load": 7.3,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 5,
+      "cold": 579.843334000092,
+      "warm": 579.0365830000956,
+      "load": 7.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 5,
+      "cold": 580.7212499999441,
+      "warm": 566.624291999964,
+      "load": 7.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 5,
+      "cold": 5819.626791999908,
+      "warm": 5978.1132080000825,
+      "load": 6.9,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 5,
+      "cold": 370.7168749999255,
+      "warm": 366.18491600011475,
+      "load": 7.4,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 5,
+      "cold": 770.6513749998994,
+      "warm": 737.0111670000479,
+      "load": 7.4,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 5,
+      "cold": 5713.8289159999695,
+      "warm": 5934.240207999945,
+      "load": 7.7,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 5,
+      "cold": 1815.1589590001386,
+      "warm": 1814.2178749998566,
+      "load": 7.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 5,
+      "cold": 671.3860410000198,
+      "warm": 683.267875000136,
+      "load": 7.5,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 6,
+      "cold": 660.2852079998702,
+      "warm": 613.7611660000402,
+      "load": 7.5,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 6,
+      "cold": 1865.5138330000918,
+      "warm": 1847.8297089999542,
+      "load": 7.5,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 6,
+      "cold": 5957.947582999943,
+      "warm": 6009.121999999974,
+      "load": 7.8,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 6,
+      "cold": 963.5096670000348,
+      "warm": 787.3363330001011,
+      "load": 7,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 6,
+      "cold": 522.3745409999974,
+      "warm": 358.3212079999503,
+      "load": 7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 6,
+      "cold": 6319.059416000033,
+      "warm": 5737.46800000011,
+      "load": 7,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 6,
+      "cold": 716.1355840000324,
+      "warm": 544.081375000067,
+      "load": 7.2,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 6,
+      "cold": 758.1209170001093,
+      "warm": 589.3827080000192,
+      "load": 7.2,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 6,
+      "cold": 1134.7828750000335,
+      "warm": 982.921624999959,
+      "load": 8.3,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 6,
+      "cold": 1112.1460829998832,
+      "warm": 1139.129166000057,
+      "load": 8.3,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 6,
+      "cold": 563.4721660001669,
+      "warm": 422.0242909998633,
+      "load": 7.9,
+      "hash": "29d0bb09b539"
+    }
+  ],
+  "sizes": {
+    "market-dx-styles": {
+      "jsRaw": 301559,
+      "jsGzip": 81719,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "4d8fcb4a3285"
+    },
+    "market-linaria": {
+      "jsRaw": 287341,
+      "jsGzip": 84026,
+      "cssRaw": 373779,
+      "cssGzip": 23841,
+      "hash": "29d0bb09b539"
+    },
+    "market-compiled": {
+      "jsRaw": 386698,
+      "jsGzip": 85611,
+      "cssRaw": 22297,
+      "cssGzip": 5267,
+      "hash": "340c4cea3ce0"
+    },
+    "wyw-single-dx1.5.0-wyw2.7.1": {
+      "jsRaw": 304749,
+      "jsGzip": 82031,
+      "cssRaw": 391576,
+      "cssGzip": 20057,
+      "hash": "318684afa52b"
+    },
+    "diag-linaria-static-vars": {
+      "jsRaw": 287341,
+      "jsGzip": 84026,
+      "cssRaw": 373779,
+      "cssGzip": 23841,
+      "hash": "29d0bb09b539"
+    },
+    "diag-compiled-collision-resistant": {
+      "jsRaw": 408162,
+      "jsGzip": 86447,
+      "cssRaw": 23280,
+      "cssGzip": 5854,
+      "hash": "cf21626c351e"
+    },
+    "diag-dx-styles-parallel": {
+      "jsRaw": 301559,
+      "jsGzip": 81719,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "4d8fcb4a3285"
+    },
+    "diag-dx-styles-parallel-8": {
+      "jsRaw": 301559,
+      "jsGzip": 81719,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "4d8fcb4a3285"
+    },
+    "diag-dx-styles-single-parallel": {
+      "jsRaw": 304749,
+      "jsGzip": 82031,
+      "cssRaw": 391576,
+      "cssGzip": 20057,
+      "hash": "318684afa52b"
+    },
+    "diag-linaria-parallel": {
+      "jsRaw": 287341,
+      "jsGzip": 84026,
+      "cssRaw": 373779,
+      "cssGzip": 23841,
+      "hash": "29d0bb09b539"
+    },
+    "diag-linaria-static-vars-parallel": {
+      "jsRaw": 287341,
+      "jsGzip": 84026,
+      "cssRaw": 373779,
+      "cssGzip": 23841,
+      "hash": "29d0bb09b539"
+    }
+  },
+  "browser": {
+    "market-dx-styles": {
+      "samples": [
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.8
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 7.8
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 7.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.8
+        },
+        {
+          "fcp": 176,
+          "lcp": 176,
+          "load": 8.8
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.5
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.5
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.7
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-linaria": {
+      "samples": [
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.5
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 7.8
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 7.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.8
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.5
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.7
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.7
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-compiled": {
+      "samples": [
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.5
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 7.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.6
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 7.6
+        },
+        {
+          "fcp": 176,
+          "lcp": 176,
+          "load": 8.8
+        },
+        {
+          "fcp": 172,
+          "lcp": 172,
+          "load": 8.8
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 8.5
+        },
+        {
+          "fcp": 184,
+          "lcp": 184,
+          "load": 8.7
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 8.7
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 5,
+      "examples": [
+        "#2056: A|inline|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto  ≠  A|inline|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto",
+        "#2110: A|inline|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto  ≠  A|inline|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto",
+        "#3633: A|block|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|94.0938px|18px  ≠  A|block|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|94.0938px|18px",
+        "#3634: A|block|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|14px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|21px|none|1|none|107.406px|21px  ≠  A|block|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|14px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|21px|none|1|none|107.406px|21px",
+        "#3635: A|block|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|16px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|24px|none|1|none|115.406px|24px  ≠  A|block|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|16px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|24px|none|1|none|115.406px|24px"
+      ]
+    },
+    "wyw-single-dx1.5.0-wyw2.7.1": {
+      "samples": [
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 7.5
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.8
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 7.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.6
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 8.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.5
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.7
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.7
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-linaria-static-vars": {
+      "samples": [
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.5
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 7.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.6
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 7.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.2
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.8
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.5
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.7
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.7
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 8.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-compiled-collision-resistant": {
+      "samples": [
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 7.5
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 7.8
+        },
+        {
+          "fcp": 180,
+          "lcp": 180,
+          "load": 7.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.2
+        },
+        {
+          "fcp": 172,
+          "lcp": 172,
+          "load": 8.2
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.8
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 8.5
+        },
+        {
+          "fcp": 172,
+          "lcp": 172,
+          "load": 8.7
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.7
+        },
+        {
+          "fcp": 180,
+          "lcp": 180,
+          "load": 8.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-dx-styles-parallel": {
+      "samples": [
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.5
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.2
+        },
+        {
+          "fcp": 172,
+          "lcp": 172,
+          "load": 8.2
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.8
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.5
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.7
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.7
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-dx-styles-parallel-8": {
+      "samples": [
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 7.5
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.8
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 7.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.2
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.2
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.5
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.7
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.7
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 9.9
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-dx-styles-single-parallel": {
+      "samples": [
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.5
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 7.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.6
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.2
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 8.2
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 8.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.5
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 8.7
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.7
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 9.9
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-linaria-parallel": {
+      "samples": [
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.5
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 7.8
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 7.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.2
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.2
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.5
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.5
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 8.7
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.7
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 9.9
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-linaria-static-vars-parallel": {
+      "samples": [
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 7.5
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 7.8
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 7.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.2
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 8.2
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.5
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.5
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 8.7
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 8.7
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 9.9
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    }
+  }
+}
