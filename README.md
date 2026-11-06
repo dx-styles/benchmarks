@@ -1,7 +1,7 @@
 # dx-styles benchmarks
 
-Build time, bundle size, first paint and render parity of [dx-styles](https://dx-styles.dev) and
-eight other ways to style a React app, all on one generated scene; plus the build of dx-styles
+Build time, bundle size, first paint and render parity of [dx-styles](https://dx-styles.dev),
+eight other CSS-in-JS libraries and plain CSS Modules, all on one generated scene; plus the build of dx-styles
 across [wyw-in-js](https://github.com/Anber/wyw-in-js) releases, the engine it compiles with.
 
 The numbers of the last run are in [RESULTS.md](./RESULTS.md). This file explains what they
@@ -119,8 +119,11 @@ medians of 7 warm builds.
 - **Render parity:** every lane but Compiled renders all 3,642 elements with the same computed
   styles as dx-styles. With its default class hash, Compiled 2.0.0 gives two atomic declarations,
   `color: var(--tk-color-danger600)` and `color: var(--tk-color-info800)`, the same class name, so
-  5 elements get the wrong color; with its opt-in `collisionResistantHash` it renders the same as
-  the others.
+  5 elements get the wrong color (a known issue,
+  [atlassian-labs/compiled#1423](https://github.com/atlassian-labs/compiled/issues/1423)); with
+  its opt-in `collisionResistantHash`
+  ([atlassian-labs/compiled#1920](https://github.com/atlassian-labs/compiled/pull/1920)) it
+  renders the same as the others.
 
 ## Where dx-styles does not win
 
