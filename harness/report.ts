@@ -21,7 +21,7 @@ export interface Environment {
 }
 
 export interface RunResult {
-  group: "market" | "wyw";
+  group: "market" | "wyw" | "diag";
   environment: Environment;
   lanes: Lane[];
   builds: BuildSample[];

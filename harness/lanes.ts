@@ -69,7 +69,10 @@ export const AGE_PINS: Record<string, string> = {
 
 export interface Lane {
   id: string;
-  group: "market" | "wyw";
+  /** market and wyw make the report; diag lanes answer one question and run only on `diag`. */
+  group: "market" | "wyw" | "diag";
+  /** Generator options of a diagnostic variant. */
+  options?: Record<string, boolean>;
   /** Generator module name under generators/. */
   lib: string;
   layout: Layout;
@@ -153,7 +156,24 @@ export const LANES: Lane[] = [
   lane("market-next-yak", "market", "next-yak", "app", "next-yak 9.10.3", { "next-yak": "9.10.3" }),
   lane("market-css-modules", "market", "css-modules", "app", "CSS Modules (no library)", {}),
   ...(["app", "single"] as const).flatMap((layout) => SERIES.map(([dx, wyw]) => dxLane("wyw", layout, dx, wyw))),
+  // Linaria with every token written as a static `var(--…)` in the templates instead of
+  // interpolated from an evaluated JS object: how much of the Linaria lane is its tokens.
+  {
+    ...lane("diag-linaria-static-vars", "diag", "linaria", "app", "Linaria 8.3.0, static CSS variables", { "@linaria/core": "8.3.0", ...linaria.deps }, linaria.overrides),
+    options: { staticVars: true },
+  },
+  // Compiled with its opt-in collision-resistant class hash (off by default in 2.0.0).
+  {
+    ...lane("diag-compiled-collision-resistant", "diag", "compiled", "app", "Compiled 2.0.0, collisionResistantHash", {
+      "@compiled/react": "2.0.0",
+      "@compiled/vite-plugin": "2.0.4",
+    }),
+    options: { collisionResistantHash: true },
+  },
 ];
+
+/** The report lanes a diagnostic run measures next to the diag lanes. */
+export const DIAG_COMPARE = ["market-dx-styles", "market-linaria", "market-compiled"];
 
 export const laneById = (id: string): Lane => {
   const found = LANES.find((l) => l.id === id);

@@ -29,7 +29,8 @@ const slotSource = (slot: Slot): string => {
   ].join("\n");
 };
 
-export const generate = (): LaneSource => {
+/** `collisionResistantHash`: Compiled's opt-in longer class hash (diagnostic). */
+export const generate = (_layout?: unknown, options: Record<string, boolean> = {}): LaneSource => {
   const files: Record<string, string> = {};
   files["src/styles/tokens.ts"] = [HEADER(LIB), `export const t = ${plainVarObject()};`, ""].join("\n");
   for (const module of MODULES) {
@@ -58,7 +59,7 @@ export const generate = (): LaneSource => {
     files,
     vite: {
       imports: ['import compiled from "@compiled/vite-plugin";'],
-      first: ["compiled({ extract: true, importReact: false })"],
+      first: [`compiled({ extract: true, importReact: false${options.collisionResistantHash ? ", collisionResistantHash: true" : ""} })`],
       plugins: [],
     },
   };

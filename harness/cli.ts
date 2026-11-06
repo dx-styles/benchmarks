@@ -4,6 +4,7 @@
  *   all       install every lane, then run `market` and `wyw` in one session
  *   market    the library comparison (build, size, first paint, render parity)
  *   wyw       the dx-styles × wyw-in-js version series
+ *   diag      the diagnostic lanes next to the report lanes they explain
  *   prepare   write and install lanes without measuring
  *   report    re-render Markdown from a results JSON (--from=results/<file>.json)
  *
@@ -17,7 +18,7 @@ import { join } from "node:path";
 
 import { fingerprintDiff, measureBrowser } from "./browser.ts";
 import { CARDS, measureSize, type SizeMetrics } from "./build.ts";
-import { type Lane, LANES } from "./lanes.ts";
+import { DIAG_COMPARE, type Lane, LANES } from "./lanes.ts";
 import { measureBuilds } from "./measure.ts";
 import { installLane, type PreparedLane, writeLane } from "./prepare.ts";
 import { type Environment, renderMarket, renderWyw, type RunResult } from "./report.ts";
@@ -46,6 +47,8 @@ const benchCommit = (): string => {
   }
 };
 
+const COMMIT = benchCommit();
+
 const environment = (chromium?: string): Environment => ({
   date: new Date().toISOString().slice(0, 16).replace("T", " ") + " UTC",
   machine: sh("sysctl", ["-n", "machdep.cpu.brand_string"]),
@@ -55,14 +58,22 @@ const environment = (chromium?: string): Environment => ({
   node: process.versions.node,
   npm: sh("npm", ["--version"]),
   chromium,
-  benchCommit: benchCommit(),
+  benchCommit: COMMIT,
   cards: CARDS,
   rounds,
   maxLoad,
 });
 
 const select = (group?: Lane["group"]): Lane[] =>
-  LANES.filter((l) => (only.length > 0 ? only.includes(l.id) : group ? l.group === group : true));
+  LANES.filter((l) =>
+    only.length > 0
+      ? only.includes(l.id)
+      : group === "diag"
+        ? l.group === "diag" || DIAG_COMPARE.includes(l.id)
+        : group
+          ? l.group === group
+          : l.group !== "diag",
+  );
 
 const prepare = async (lanes: Lane[], install: boolean): Promise<PreparedLane[]> => {
   const prepared: PreparedLane[] = [];
@@ -85,7 +96,7 @@ const save = async (run: RunResult): Promise<string> => {
   await mkdir(dir, { recursive: true });
   const base = join(dir, `${stamp}-${run.group}`);
   await writeFile(`${base}.json`, `${JSON.stringify(run, null, 2)}\n`);
-  const md = run.group === "market" ? renderMarket(run) : renderWyw(run);
+  const md = run.group === "wyw" ? renderWyw(run) : renderMarket(run);
   await writeFile(`${base}.md`, md);
   log(`[results] ${base}.json\n${md}`);
   return md;
@@ -97,7 +108,7 @@ const sizes = async (prepared: PreparedLane[]): Promise<Record<string, SizeMetri
   return out;
 };
 
-const runMarket = async (prepared: PreparedLane[]): Promise<RunResult> => {
+const runMarket = async (prepared: PreparedLane[], group: RunResult["group"] = "market"): Promise<RunResult> => {
   const builds = await measureBuilds(prepared, { rounds, maxLoad, maxWait });
   const size = await sizes(prepared);
   const browser = await measureBrowser(prepared, fcpSamples);
@@ -105,7 +116,7 @@ const runMarket = async (prepared: PreparedLane[]): Promise<RunResult> => {
   const withDiff: NonNullable<RunResult["browser"]> = {};
   for (const [id, result] of browser) withDiff[id] = { ...result, ...fingerprintDiff(reference, result.fingerprint), fingerprint: [] };
   const chromium = [...browser.values()][0]?.chromium;
-  return { group: "market", environment: environment(chromium), lanes: prepared.map((p) => p.lane), builds, sizes: size, browser: withDiff };
+  return { group, environment: environment(chromium), lanes: prepared.map((p) => p.lane), builds, sizes: size, browser: withDiff };
 };
 
 const runWyw = async (prepared: PreparedLane[]): Promise<RunResult> => {
@@ -137,9 +148,12 @@ switch (command) {
     await results(market, wyw);
     break;
   }
+  case "diag":
+    await save(await runMarket(await prepare(select("diag"), !flag("no-install")), "diag"));
+    break;
   case "report": {
     const run = JSON.parse(await readFile(opt("from", ""), "utf8")) as RunResult;
-    log(run.group === "market" ? renderMarket(run) : renderWyw(run));
+    log(run.group === "wyw" ? renderWyw(run) : renderMarket(run));
     break;
   }
   default:

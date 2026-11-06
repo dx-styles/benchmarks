@@ -1,0 +1,1542 @@
+{
+  "group": "wyw",
+  "environment": {
+    "date": "2026-11-06 11:23 UTC",
+    "machine": "Apple M3 Max",
+    "cores": 16,
+    "memoryGb": 64,
+    "os": "macOS 26.6.2",
+    "node": "24.4.1",
+    "npm": "11.4.2",
+    "benchCommit": "cdaeaa8",
+    "cards": 120,
+    "rounds": 7,
+    "maxLoad": 8
+  },
+  "lanes": [
+    {
+      "id": "wyw-app-dx1.3.0-wyw2.3.0",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.3.0 · wyw 2.3.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.3.0"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.3.0",
+        "@wyw-in-js/processor-utils": "2.3.0",
+        "@wyw-in-js/shared": "2.3.0",
+        "@wyw-in-js/vite": "2.3.0"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.3.0",
+        "@wyw-in-js/transform": "2.3.0",
+        "@wyw-in-js/processor-utils": "2.3.0",
+        "@wyw-in-js/shared": "2.3.0"
+      }
+    },
+    {
+      "id": "wyw-app-dx1.3.0-wyw2.4.4",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.3.0 · wyw 2.4.4",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.4.4"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.4.4",
+        "@wyw-in-js/processor-utils": "2.4.1",
+        "@wyw-in-js/shared": "2.4.0",
+        "@wyw-in-js/vite": "2.4.4"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.4.4",
+        "@wyw-in-js/transform": "2.4.4",
+        "@wyw-in-js/processor-utils": "2.4.1",
+        "@wyw-in-js/shared": "2.4.0"
+      }
+    },
+    {
+      "id": "wyw-app-dx1.3.0-wyw2.5.1",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.3.0 · wyw 2.5.1",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.5.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.5.1",
+        "@wyw-in-js/processor-utils": "2.5.0",
+        "@wyw-in-js/shared": "2.5.0",
+        "@wyw-in-js/vite": "2.5.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.5.1",
+        "@wyw-in-js/transform": "2.5.1",
+        "@wyw-in-js/processor-utils": "2.5.0",
+        "@wyw-in-js/shared": "2.5.0"
+      }
+    },
+    {
+      "id": "wyw-app-dx1.3.0-wyw2.6.0",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.3.0 · wyw 2.6.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.6.0"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.6.0",
+        "@wyw-in-js/processor-utils": "2.6.0",
+        "@wyw-in-js/shared": "2.6.0",
+        "@wyw-in-js/vite": "2.6.0"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.6.0",
+        "@wyw-in-js/transform": "2.6.0",
+        "@wyw-in-js/processor-utils": "2.6.0",
+        "@wyw-in-js/shared": "2.6.0"
+      }
+    },
+    {
+      "id": "wyw-app-dx1.3.0-wyw2.7.1",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.3.0 · wyw 2.7.1",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "wyw-app-dx1.4.1-wyw2.4.4",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.4.1 · wyw 2.4.4",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.4.1",
+        "@wyw-in-js/vite": "2.4.4"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.4.4",
+        "@wyw-in-js/processor-utils": "2.4.1",
+        "@wyw-in-js/shared": "2.4.0",
+        "@wyw-in-js/vite": "2.4.4"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.4.1",
+        "@wyw-in-js/vite": "2.4.4",
+        "@wyw-in-js/transform": "2.4.4",
+        "@wyw-in-js/processor-utils": "2.4.1",
+        "@wyw-in-js/shared": "2.4.0"
+      }
+    },
+    {
+      "id": "wyw-app-dx1.4.1-wyw2.7.1",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.4.1 · wyw 2.7.1",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.4.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.4.1",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "wyw-app-dx1.5.0-wyw2.7.1",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.5.0 · wyw 2.7.1",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "wyw-single-dx1.3.0-wyw2.3.0",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "single",
+      "label": "dx-styles 1.3.0 · wyw 2.3.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.3.0"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.3.0",
+        "@wyw-in-js/processor-utils": "2.3.0",
+        "@wyw-in-js/shared": "2.3.0",
+        "@wyw-in-js/vite": "2.3.0"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.3.0",
+        "@wyw-in-js/transform": "2.3.0",
+        "@wyw-in-js/processor-utils": "2.3.0",
+        "@wyw-in-js/shared": "2.3.0"
+      }
+    },
+    {
+      "id": "wyw-single-dx1.3.0-wyw2.4.4",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "single",
+      "label": "dx-styles 1.3.0 · wyw 2.4.4",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.4.4"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.4.4",
+        "@wyw-in-js/processor-utils": "2.4.1",
+        "@wyw-in-js/shared": "2.4.0",
+        "@wyw-in-js/vite": "2.4.4"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.4.4",
+        "@wyw-in-js/transform": "2.4.4",
+        "@wyw-in-js/processor-utils": "2.4.1",
+        "@wyw-in-js/shared": "2.4.0"
+      }
+    },
+    {
+      "id": "wyw-single-dx1.3.0-wyw2.5.1",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "single",
+      "label": "dx-styles 1.3.0 · wyw 2.5.1",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.5.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.5.1",
+        "@wyw-in-js/processor-utils": "2.5.0",
+        "@wyw-in-js/shared": "2.5.0",
+        "@wyw-in-js/vite": "2.5.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.5.1",
+        "@wyw-in-js/transform": "2.5.1",
+        "@wyw-in-js/processor-utils": "2.5.0",
+        "@wyw-in-js/shared": "2.5.0"
+      }
+    },
+    {
+      "id": "wyw-single-dx1.3.0-wyw2.6.0",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "single",
+      "label": "dx-styles 1.3.0 · wyw 2.6.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.6.0"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.6.0",
+        "@wyw-in-js/processor-utils": "2.6.0",
+        "@wyw-in-js/shared": "2.6.0",
+        "@wyw-in-js/vite": "2.6.0"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.6.0",
+        "@wyw-in-js/transform": "2.6.0",
+        "@wyw-in-js/processor-utils": "2.6.0",
+        "@wyw-in-js/shared": "2.6.0"
+      }
+    },
+    {
+      "id": "wyw-single-dx1.3.0-wyw2.7.1",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "single",
+      "label": "dx-styles 1.3.0 · wyw 2.7.1",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "wyw-single-dx1.4.1-wyw2.4.4",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "single",
+      "label": "dx-styles 1.4.1 · wyw 2.4.4",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.4.1",
+        "@wyw-in-js/vite": "2.4.4"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.4.4",
+        "@wyw-in-js/processor-utils": "2.4.1",
+        "@wyw-in-js/shared": "2.4.0",
+        "@wyw-in-js/vite": "2.4.4"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.4.1",
+        "@wyw-in-js/vite": "2.4.4",
+        "@wyw-in-js/transform": "2.4.4",
+        "@wyw-in-js/processor-utils": "2.4.1",
+        "@wyw-in-js/shared": "2.4.0"
+      }
+    },
+    {
+      "id": "wyw-single-dx1.4.1-wyw2.7.1",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "single",
+      "label": "dx-styles 1.4.1 · wyw 2.7.1",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.4.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.4.1",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "wyw-single-dx1.5.0-wyw2.7.1",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "single",
+      "label": "dx-styles 1.5.0 · wyw 2.7.1",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    }
+  ],
+  "builds": [
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.3.0",
+      "round": 0,
+      "cold": 1509.5904999999912,
+      "warm": 1411.9627079999773,
+      "load": 7.1,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.4.4",
+      "round": 0,
+      "cold": 1404.5989580000169,
+      "warm": 1340.7004169999855,
+      "load": 7.1,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.5.1",
+      "round": 0,
+      "cold": 962.207791999972,
+      "warm": 893.6087910000351,
+      "load": 6.9,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.6.0",
+      "round": 0,
+      "cold": 765.294458999997,
+      "warm": 691.0910410000361,
+      "load": 6.9,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.7.1",
+      "round": 0,
+      "cold": 758.8775000000023,
+      "warm": 668.9464589999989,
+      "load": 7.2,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.4.4",
+      "round": 0,
+      "cold": 1419.3469580000383,
+      "warm": 1342.2087499999907,
+      "load": 7.2,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.7.1",
+      "round": 0,
+      "cold": 757.3673340000096,
+      "warm": 675.9302920000046,
+      "load": 7.2,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.5.0-wyw2.7.1",
+      "round": 0,
+      "cold": 749.4767500000307,
+      "warm": 675.4361670000362,
+      "load": 6.8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.3.0",
+      "round": 0,
+      "cold": 1976.5063329999684,
+      "warm": 1926.8218340000021,
+      "load": 6.8,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.4.4",
+      "round": 0,
+      "cold": 1855.11599999998,
+      "warm": 1756.7940829999861,
+      "load": 6.5,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.5.1",
+      "round": 0,
+      "cold": 1404.7481670000125,
+      "warm": 1329.1242499999935,
+      "load": 6.5,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.6.0",
+      "round": 0,
+      "cold": 861.3604589999886,
+      "warm": 777.1321669999743,
+      "load": 6.4,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.7.1",
+      "round": 0,
+      "cold": 881.8803329999791,
+      "warm": 788.259625000006,
+      "load": 6.4,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.4.4",
+      "round": 0,
+      "cold": 1895.7995830000145,
+      "warm": 1765.1035000000265,
+      "load": 6.5,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.7.1",
+      "round": 0,
+      "cold": 860.8699580000248,
+      "warm": 771.2835830000113,
+      "load": 6.5,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 0,
+      "cold": 866.2375410000095,
+      "warm": 774.4087909999653,
+      "load": 6.1,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 1,
+      "cold": 766.9112919999752,
+      "warm": 779.4477910000132,
+      "load": 6.1,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.7.1",
+      "round": 1,
+      "cold": 775.6768750000047,
+      "warm": 775.4402499999851,
+      "load": 6.1,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.4.4",
+      "round": 1,
+      "cold": 1794.9304169999668,
+      "warm": 1762.6586249999818,
+      "load": 6.1,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.7.1",
+      "round": 1,
+      "cold": 780.9602920000325,
+      "warm": 779.874749999959,
+      "load": 6.1,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.6.0",
+      "round": 1,
+      "cold": 785.4626670000143,
+      "warm": 783.5669580000103,
+      "load": 6.2,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.5.1",
+      "round": 1,
+      "cold": 1336.911791999999,
+      "warm": 1350.6263340000296,
+      "load": 6.2,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.4.4",
+      "round": 1,
+      "cold": 1808.5043329999899,
+      "warm": 1813.0432080000173,
+      "load": 6.3,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.3.0",
+      "round": 1,
+      "cold": 1924.469625000027,
+      "warm": 1945.4075420000008,
+      "load": 6.3,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-app-dx1.5.0-wyw2.7.1",
+      "round": 1,
+      "cold": 691.9095000000088,
+      "warm": 693.0447089999798,
+      "load": 6.4,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.7.1",
+      "round": 1,
+      "cold": 702.671417000005,
+      "warm": 678.6859169999952,
+      "load": 6.4,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.4.4",
+      "round": 1,
+      "cold": 1362.1126670000376,
+      "warm": 1354.8783340000082,
+      "load": 6.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.7.1",
+      "round": 1,
+      "cold": 683.8218340000021,
+      "warm": 681.3463750000228,
+      "load": 6.3,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.6.0",
+      "round": 1,
+      "cold": 691.2319169999682,
+      "warm": 688.73529099999,
+      "load": 6.3,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.5.1",
+      "round": 1,
+      "cold": 925.5544579999987,
+      "warm": 942.069749999966,
+      "load": 6.2,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.4.4",
+      "round": 1,
+      "cold": 1358.7322079999722,
+      "warm": 1361.110624999972,
+      "load": 6.2,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.3.0",
+      "round": 1,
+      "cold": 1455.9328749999986,
+      "warm": 1443.5775830000057,
+      "load": 6.5,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.3.0",
+      "round": 2,
+      "cold": 1444.2663750000065,
+      "warm": 1442.0197920000064,
+      "load": 6.5,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.4.4",
+      "round": 2,
+      "cold": 1360.9657080000034,
+      "warm": 1355.3666669999948,
+      "load": 6.8,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.5.1",
+      "round": 2,
+      "cold": 912.4955420000479,
+      "warm": 919.715084000025,
+      "load": 6.8,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.6.0",
+      "round": 2,
+      "cold": 689.2751249999856,
+      "warm": 675.227499999979,
+      "load": 7.2,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.7.1",
+      "round": 2,
+      "cold": 683.6385409999639,
+      "warm": 669.1027079999913,
+      "load": 7.2,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.4.4",
+      "round": 2,
+      "cold": 1347.6139580000308,
+      "warm": 1327.713000000047,
+      "load": 7.2,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.7.1",
+      "round": 2,
+      "cold": 688.2909579999978,
+      "warm": 675.0987079999759,
+      "load": 7.1,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.5.0-wyw2.7.1",
+      "round": 2,
+      "cold": 675.0957500000368,
+      "warm": 678.382500000007,
+      "load": 7.1,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.3.0",
+      "round": 2,
+      "cold": 1969.5767500000075,
+      "warm": 1934.0610829999787,
+      "load": 7.1,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.4.4",
+      "round": 2,
+      "cold": 1798.2231669999892,
+      "warm": 1792.9443330000504,
+      "load": 7.1,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.5.1",
+      "round": 2,
+      "cold": 1332.7904580000322,
+      "warm": 1344.9047080000164,
+      "load": 7.1,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.6.0",
+      "round": 2,
+      "cold": 784.6350000000093,
+      "warm": 788.6365839999635,
+      "load": 7.1,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.7.1",
+      "round": 2,
+      "cold": 777.2082079999382,
+      "warm": 782.7599169999594,
+      "load": 7.2,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.4.4",
+      "round": 2,
+      "cold": 1822.2285000000848,
+      "warm": 1798.9102499999572,
+      "load": 7.2,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.7.1",
+      "round": 2,
+      "cold": 786.3638330000686,
+      "warm": 782.5421659999993,
+      "load": 7.8,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 2,
+      "cold": 784.0186250000261,
+      "warm": 781.9348750000354,
+      "load": 7.8,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 3,
+      "cold": 779.5582080000313,
+      "warm": 800.5642080000835,
+      "load": 7.8,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.7.1",
+      "round": 3,
+      "cold": 783.1153330000816,
+      "warm": 793.8539579999633,
+      "load": 9.1,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.4.4",
+      "round": 3,
+      "cold": 1778.972833000007,
+      "warm": 1805.4322499999544,
+      "load": 9.1,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.7.1",
+      "round": 3,
+      "cold": 770.1923330000136,
+      "warm": 786.8394169999519,
+      "load": 8.9,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.6.0",
+      "round": 3,
+      "cold": 785.1360829999903,
+      "warm": 764.3702909999993,
+      "load": 8.9,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.5.1",
+      "round": 3,
+      "cold": 1352.8279590000166,
+      "warm": 1325.5448750000214,
+      "load": 8.9,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.4.4",
+      "round": 3,
+      "cold": 1800.8342500000726,
+      "warm": 1775.2887079999782,
+      "load": 8.8,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.3.0",
+      "round": 3,
+      "cold": 1950.7903749999823,
+      "warm": 1921.7992499999236,
+      "load": 9.4,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-app-dx1.5.0-wyw2.7.1",
+      "round": 3,
+      "cold": 691.4224580000155,
+      "warm": 699.7987919999287,
+      "load": 9.4,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.7.1",
+      "round": 3,
+      "cold": 681.3705420000479,
+      "warm": 695.8703329999698,
+      "load": 9.7,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.4.4",
+      "round": 3,
+      "cold": 1376.6402499999385,
+      "warm": 1366.5511669999687,
+      "load": 9.7,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.7.1",
+      "round": 3,
+      "cold": 693.5350409999955,
+      "warm": 690.5534169999883,
+      "load": 9.7,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.6.0",
+      "round": 3,
+      "cold": 696.3396669999929,
+      "warm": 688.1533749999944,
+      "load": 9.5,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.5.1",
+      "round": 3,
+      "cold": 906.2241659999127,
+      "warm": 905.454916000017,
+      "load": 9.5,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.4.4",
+      "round": 3,
+      "cold": 1365.4960000000428,
+      "warm": 1324.2669999999925,
+      "load": 9.5,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.3.0",
+      "round": 3,
+      "cold": 1431.0444170000264,
+      "warm": 1453.3497500000522,
+      "load": 9.3,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.3.0",
+      "round": 4,
+      "cold": 1402.2616250000428,
+      "warm": 1426.4346250001108,
+      "load": 7.9,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.4.4",
+      "round": 4,
+      "cold": 1324.6994580000173,
+      "warm": 1345.0895000000019,
+      "load": 8,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.5.1",
+      "round": 4,
+      "cold": 891.699459000025,
+      "warm": 899.4237079999875,
+      "load": 8.1,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.6.0",
+      "round": 4,
+      "cold": 662.9023329999764,
+      "warm": 665.6518749999814,
+      "load": 8.1,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.7.1",
+      "round": 4,
+      "cold": 682.4417920000851,
+      "warm": 690.3727080000099,
+      "load": 8.1,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.4.4",
+      "round": 4,
+      "cold": 1330.906541000004,
+      "warm": 1338.5800419999287,
+      "load": 8.1,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.7.1",
+      "round": 4,
+      "cold": 661.1367500000633,
+      "warm": 684.2292919999454,
+      "load": 8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.5.0-wyw2.7.1",
+      "round": 4,
+      "cold": 680.2936250000494,
+      "warm": 676.2954160000663,
+      "load": 8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.3.0",
+      "round": 4,
+      "cold": 1950.1161250000587,
+      "warm": 1936.3521660000551,
+      "load": 8,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.4.4",
+      "round": 4,
+      "cold": 1790.1503340000054,
+      "warm": 1775.314667000086,
+      "load": 8.8,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.5.1",
+      "round": 4,
+      "cold": 1328.9329160000198,
+      "warm": 1320.9447500000242,
+      "load": 8.8,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.6.0",
+      "round": 4,
+      "cold": 776.5999159999192,
+      "warm": 777.6428329999326,
+      "load": 9.1,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.7.1",
+      "round": 4,
+      "cold": 761.3502089999383,
+      "warm": 778.5666249999776,
+      "load": 9.1,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.4.4",
+      "round": 4,
+      "cold": 1793.5098330000183,
+      "warm": 1784.8062079999363,
+      "load": 9.1,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.7.1",
+      "round": 4,
+      "cold": 767.1773750000866,
+      "warm": 766.0172499999171,
+      "load": 8.9,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 4,
+      "cold": 768.2734170000767,
+      "warm": 773.0153329999885,
+      "load": 8.9,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 5,
+      "cold": 790.9135000000242,
+      "warm": 782.6858750000829,
+      "load": 7.9,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.7.1",
+      "round": 5,
+      "cold": 783.6803330000257,
+      "warm": 785.7396659998922,
+      "load": 7.9,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.4.4",
+      "round": 5,
+      "cold": 1798.8936669999966,
+      "warm": 1798.7082080000546,
+      "load": 7.9,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.7.1",
+      "round": 5,
+      "cold": 787.1583330000285,
+      "warm": 799.1407500000205,
+      "load": 7.9,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.6.0",
+      "round": 5,
+      "cold": 778.5010420000181,
+      "warm": 781.4490419999929,
+      "load": 7.9,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.5.1",
+      "round": 5,
+      "cold": 1329.4559169999557,
+      "warm": 1355.8025829999242,
+      "load": 7.9,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.4.4",
+      "round": 5,
+      "cold": 1792.9115830000956,
+      "warm": 1783.23345900001,
+      "load": 7.9,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.3.0",
+      "round": 5,
+      "cold": 1933.688749999972,
+      "warm": 1940.8076670001028,
+      "load": 7.8,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-app-dx1.5.0-wyw2.7.1",
+      "round": 5,
+      "cold": 679.6459580000956,
+      "warm": 668.8564590000315,
+      "load": 7.8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.7.1",
+      "round": 5,
+      "cold": 692.237625000067,
+      "warm": 676.3870829999214,
+      "load": 8.2,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.4.4",
+      "round": 5,
+      "cold": 1332.8733749999665,
+      "warm": 1344.5413330000592,
+      "load": 8.2,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.7.1",
+      "round": 5,
+      "cold": 660.7696250000736,
+      "warm": 682.4473329999018,
+      "load": 8,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.6.0",
+      "round": 5,
+      "cold": 695.1030420000898,
+      "warm": 671.4030830000993,
+      "load": 8,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.5.1",
+      "round": 5,
+      "cold": 885.3455419999082,
+      "warm": 883.4567090000492,
+      "load": 8,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.4.4",
+      "round": 5,
+      "cold": 1345.623041999992,
+      "warm": 1352.6685829999624,
+      "load": 8,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.3.0",
+      "round": 5,
+      "cold": 1441.8219169999938,
+      "warm": 1426.3151670000516,
+      "load": 8.2,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.3.0",
+      "round": 6,
+      "cold": 1584.8240000000224,
+      "warm": 1403.8247499999125,
+      "load": 7.7,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.4.4",
+      "round": 6,
+      "cold": 1506.4129590000957,
+      "warm": 1321.875,
+      "load": 7.7,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.5.1",
+      "round": 6,
+      "cold": 1082.4011250000913,
+      "warm": 908.0360409999266,
+      "load": 7.4,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.6.0",
+      "round": 6,
+      "cold": 856.5328750000335,
+      "warm": 674.7178330000024,
+      "load": 7.4,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.3.0-wyw2.7.1",
+      "round": 6,
+      "cold": 859.2100410000421,
+      "warm": 648.4156669999938,
+      "load": 7.4,
+      "hash": "d3e1b3b05d77"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.4.4",
+      "round": 6,
+      "cold": 1523.407000000123,
+      "warm": 1336.5447919999715,
+      "load": 7.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.4.1-wyw2.7.1",
+      "round": 6,
+      "cold": 877.7610830001067,
+      "warm": 715.5344579999801,
+      "load": 7.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-app-dx1.5.0-wyw2.7.1",
+      "round": 6,
+      "cold": 933.2904169999529,
+      "warm": 687.3099590002093,
+      "load": 7.6,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.3.0",
+      "round": 6,
+      "cold": 2143.054541000165,
+      "warm": 1954.9488340001553,
+      "load": 7.6,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.4.4",
+      "round": 6,
+      "cold": 1951.5435000001453,
+      "warm": 1791.5440830001608,
+      "load": 7.3,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.5.1",
+      "round": 6,
+      "cold": 1530.7700420001056,
+      "warm": 1337.3523330001626,
+      "load": 7.3,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.6.0",
+      "round": 6,
+      "cold": 974.2077089999802,
+      "warm": 782.0093339998275,
+      "load": 7.3,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.3.0-wyw2.7.1",
+      "round": 6,
+      "cold": 993.6963750000577,
+      "warm": 767.5181249999441,
+      "load": 7.3,
+      "hash": "2b1c6da0e172"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.4.4",
+      "round": 6,
+      "cold": 2003.8674579998478,
+      "warm": 1789.8221249999478,
+      "load": 7.2,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.4.1-wyw2.7.1",
+      "round": 6,
+      "cold": 1010.472666000016,
+      "warm": 784.58808399993,
+      "load": 7,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 6,
+      "cold": 984.7273330001626,
+      "warm": 765.3475839998573,
+      "load": 7,
+      "hash": "318684afa52b"
+    }
+  ],
+  "sizes": {
+    "wyw-app-dx1.3.0-wyw2.3.0": {
+      "jsRaw": 301529,
+      "jsGzip": 81705,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "d3e1b3b05d77"
+    },
+    "wyw-app-dx1.3.0-wyw2.4.4": {
+      "jsRaw": 301529,
+      "jsGzip": 81705,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "d3e1b3b05d77"
+    },
+    "wyw-app-dx1.3.0-wyw2.5.1": {
+      "jsRaw": 301529,
+      "jsGzip": 81705,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "d3e1b3b05d77"
+    },
+    "wyw-app-dx1.3.0-wyw2.6.0": {
+      "jsRaw": 301529,
+      "jsGzip": 81705,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "d3e1b3b05d77"
+    },
+    "wyw-app-dx1.3.0-wyw2.7.1": {
+      "jsRaw": 301529,
+      "jsGzip": 81705,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "d3e1b3b05d77"
+    },
+    "wyw-app-dx1.4.1-wyw2.4.4": {
+      "jsRaw": 301559,
+      "jsGzip": 81719,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "4d8fcb4a3285"
+    },
+    "wyw-app-dx1.4.1-wyw2.7.1": {
+      "jsRaw": 301559,
+      "jsGzip": 81719,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "4d8fcb4a3285"
+    },
+    "wyw-app-dx1.5.0-wyw2.7.1": {
+      "jsRaw": 301559,
+      "jsGzip": 81719,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "4d8fcb4a3285"
+    },
+    "wyw-single-dx1.3.0-wyw2.3.0": {
+      "jsRaw": 304719,
+      "jsGzip": 82015,
+      "cssRaw": 391576,
+      "cssGzip": 20057,
+      "hash": "2b1c6da0e172"
+    },
+    "wyw-single-dx1.3.0-wyw2.4.4": {
+      "jsRaw": 304719,
+      "jsGzip": 82015,
+      "cssRaw": 391576,
+      "cssGzip": 20057,
+      "hash": "2b1c6da0e172"
+    },
+    "wyw-single-dx1.3.0-wyw2.5.1": {
+      "jsRaw": 304719,
+      "jsGzip": 82015,
+      "cssRaw": 391576,
+      "cssGzip": 20057,
+      "hash": "2b1c6da0e172"
+    },
+    "wyw-single-dx1.3.0-wyw2.6.0": {
+      "jsRaw": 304719,
+      "jsGzip": 82015,
+      "cssRaw": 391576,
+      "cssGzip": 20057,
+      "hash": "2b1c6da0e172"
+    },
+    "wyw-single-dx1.3.0-wyw2.7.1": {
+      "jsRaw": 304719,
+      "jsGzip": 82015,
+      "cssRaw": 391576,
+      "cssGzip": 20057,
+      "hash": "2b1c6da0e172"
+    },
+    "wyw-single-dx1.4.1-wyw2.4.4": {
+      "jsRaw": 304749,
+      "jsGzip": 82031,
+      "cssRaw": 391576,
+      "cssGzip": 20057,
+      "hash": "318684afa52b"
+    },
+    "wyw-single-dx1.4.1-wyw2.7.1": {
+      "jsRaw": 304749,
+      "jsGzip": 82031,
+      "cssRaw": 391576,
+      "cssGzip": 20057,
+      "hash": "318684afa52b"
+    },
+    "wyw-single-dx1.5.0-wyw2.7.1": {
+      "jsRaw": 304749,
+      "jsGzip": 82031,
+      "cssRaw": 391576,
+      "cssGzip": 20057,
+      "hash": "318684afa52b"
+    }
+  }
+}

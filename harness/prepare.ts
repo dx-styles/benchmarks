@@ -93,13 +93,15 @@ export interface PreparedLane {
 }
 
 const generatorFor = async (lib: string) =>
-  (await import(join(ROOT, "generators", `${lib}.ts`))) as { generate: (layout: Lane["layout"]) => LaneSource };
+  (await import(join(ROOT, "generators", `${lib}.ts`))) as {
+    generate: (layout: Lane["layout"], options: Record<string, boolean>) => LaneSource;
+  };
 
 /** (Re)write the lane's sources; keeps node_modules. */
 export const writeLane = async (lane: Lane): Promise<PreparedLane> => {
   const dir = laneDir(lane);
   const { generate } = await generatorFor(lane.lib);
-  const source = generate(lane.layout);
+  const source = generate(lane.layout, lane.options ?? {});
   for (const sub of ["src", "dist", ".vite-cache", ...(source.cleanDirs ?? [])]) {
     await rm(join(dir, sub), { recursive: true, force: true });
   }
