@@ -115,7 +115,7 @@ medians of 7 warm builds.
   the token model of the port: its styles interpolate tokens from a JS object that the engine
   evaluates for each of the 41 style modules, while dx-styles declares a token contract that its
   processors resolve without evaluation. Written as static CSS variables, the same Linaria scene
-  builds in 0.37 s with an output of the same size (`npm run bench:diag`).
+  builds in 0.38 s with an output of the same size (`npm run bench:diag`).
 - **wyw-in-js worker threads** (`parallel`, experimental since 2.6.0, measured on 2.7.1 with
   `npm run bench:diag`) pay off where the engine evaluates a lot in every module: the Linaria
   lane goes from 1.88 s to 1.03 s. Elsewhere they give little or cost time: dx-styles with
@@ -137,7 +137,7 @@ medians of 7 warm builds.
 - **Build time.** The runtime libraries do no build-time extraction (styled-components 0.16 s,
   Emotion 0.17 s); Panda (0.21 s), next-yak (0.30 s) and vanilla-extract (0.56 s) build faster
   than dx-styles (0.68 s), and CSS Modules with no library at all (0.66 s) is level with it.
-  Linaria with static CSS variables (0.37 s) shows what the dx-styles processors (token
+  Linaria with static CSS variables (0.38 s) shows what the dx-styles processors (token
   contract, recipes) cost on top of the shared engine: about 0.3 s on this scene.
 - **Size.** dx-styles ships 99.4 KB gzip in total, more than the atomic engines (Compiled
   88.7 KB, Panda 89.2 KB, StyleX 89.5 KB), Emotion (93.5 KB), vanilla-extract (94.9 KB),

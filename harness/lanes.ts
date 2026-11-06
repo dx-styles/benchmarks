@@ -113,7 +113,7 @@ const dxLane = (group: Lane["group"], layout: Layout, dx: string, wyw: string): 
     group,
     "dx-styles",
     layout,
-    group === "market" ? `dx-styles ${dx}` : `dx-styles ${dx} · wyw ${wyw}`,
+    group === "market" ? `dx-styles ${dx}` : `dx-styles ${dx}${layout === "single" ? ", one module" : ""} · wyw ${wyw}`,
     { "dx-styles": dx, ...stack.deps },
     stack.overrides,
   );
