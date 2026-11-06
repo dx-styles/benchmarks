@@ -1,0 +1,22 @@
+{
+  "name": "dx-styles-benchmarks",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Reproducible build, size and first-paint benchmarks of dx-styles and other CSS-in-JS libraries on one generated scene.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "bench": "node harness/cli.ts all",
+    "bench:market": "node harness/cli.ts market",
+    "bench:wyw": "node harness/cli.ts wyw",
+    "prepare-lanes": "node harness/cli.ts prepare",
+    "report": "node harness/cli.ts report",
+    "check-release-age": "node harness/release-age.ts"
+  },
+  "devDependencies": {
+    "playwright": "1.64.1"
+  }
+}
