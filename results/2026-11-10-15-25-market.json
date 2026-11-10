@@ -1,0 +1,1493 @@
+{
+  "group": "market",
+  "environment": {
+    "date": "2026-11-10 15:30 UTC",
+    "machine": "Apple M3 Max",
+    "cores": 16,
+    "memoryGb": 64,
+    "os": "macOS 26.6.2",
+    "node": "24.4.1",
+    "npm": "11.4.2",
+    "chromium": "156.0.8078.4",
+    "benchCommit": "6d7ecc3",
+    "cards": 120,
+    "rounds": 7,
+    "maxLoad": 8
+  },
+  "lanes": [
+    {
+      "id": "market-dx-styles",
+      "group": "market",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.5.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "market-linaria",
+      "group": "market",
+      "lib": "linaria",
+      "layout": "app",
+      "label": "Linaria 8.3.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "market-vanilla-extract",
+      "group": "market",
+      "lib": "vanilla-extract",
+      "layout": "app",
+      "label": "vanilla-extract 1.21.3",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@vanilla-extract/css": "1.21.3",
+        "@vanilla-extract/recipes": "0.5.7",
+        "@vanilla-extract/vite-plugin": "5.2.6"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@vanilla-extract/css": "1.21.3",
+        "@vanilla-extract/recipes": "0.5.7",
+        "@vanilla-extract/vite-plugin": "5.2.6"
+      }
+    },
+    {
+      "id": "market-panda",
+      "group": "market",
+      "lib": "panda",
+      "layout": "app",
+      "label": "Panda 2.4.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@pandacss/dev": "2.4.0",
+        "@pandacss/preset-base": "2.4.0",
+        "postcss": "8.5.32"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@pandacss/dev": "2.4.0",
+        "@pandacss/preset-base": "2.4.0",
+        "postcss": "8.5.32"
+      }
+    },
+    {
+      "id": "market-stylex",
+      "group": "market",
+      "lib": "stylex",
+      "layout": "app",
+      "label": "StyleX 0.19.1",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@stylexjs/stylex": "0.19.1",
+        "@stylexjs/unplugin": "0.19.1"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@stylexjs/stylex": "0.19.1",
+        "@stylexjs/unplugin": "0.19.1"
+      }
+    },
+    {
+      "id": "market-compiled",
+      "group": "market",
+      "lib": "compiled",
+      "layout": "app",
+      "label": "Compiled 2.0.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      }
+    },
+    {
+      "id": "market-emotion",
+      "group": "market",
+      "lib": "emotion",
+      "layout": "app",
+      "label": "Emotion 11.14",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@emotion/react": "11.14.0",
+        "@emotion/styled": "11.14.1"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@emotion/react": "11.14.0",
+        "@emotion/styled": "11.14.1"
+      }
+    },
+    {
+      "id": "market-styled-components",
+      "group": "market",
+      "lib": "styled-components",
+      "layout": "app",
+      "label": "styled-components 6.6.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "styled-components": "6.6.0"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "styled-components": "6.6.0"
+      }
+    },
+    {
+      "id": "market-next-yak",
+      "group": "market",
+      "lib": "next-yak",
+      "layout": "app",
+      "label": "next-yak 9.10.3",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "next-yak": "9.10.3"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "next-yak": "9.10.3"
+      }
+    },
+    {
+      "id": "market-css-modules",
+      "group": "market",
+      "lib": "css-modules",
+      "layout": "app",
+      "label": "CSS Modules (no library)",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2"
+      }
+    }
+  ],
+  "builds": [
+    {
+      "lane": "market-dx-styles",
+      "round": 0,
+      "cold": 733.6130000000121,
+      "warm": 595.8224169999885,
+      "load": 4.8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 0,
+      "cold": 1860.963665999996,
+      "warm": 1775.2416669999948,
+      "load": 4.6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-vanilla-extract",
+      "round": 0,
+      "cold": 671.6393329999992,
+      "warm": 511.11304199998267,
+      "load": 4.6,
+      "hash": "87c8137fa395"
+    },
+    {
+      "lane": "market-panda",
+      "round": 0,
+      "cold": 337.13541699998314,
+      "warm": 222.47195800000918,
+      "load": 5.9,
+      "hash": "a9fd65c5f5a2"
+    },
+    {
+      "lane": "market-stylex",
+      "round": 0,
+      "cold": 2092.30137500001,
+      "warm": 1915.2985409999965,
+      "load": 5.9,
+      "hash": "1e831e384b3f"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 0,
+      "cold": 5372.921292000014,
+      "warm": 5185.917959000013,
+      "load": 5.6,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-emotion",
+      "round": 0,
+      "cold": 203.49862500000745,
+      "warm": 146.79816599999322,
+      "load": 5.2,
+      "hash": "0f06b16325d5"
+    },
+    {
+      "lane": "market-styled-components",
+      "round": 0,
+      "cold": 199.98929199998383,
+      "warm": 151.0268329999817,
+      "load": 5.2,
+      "hash": "07c200a5db2c"
+    },
+    {
+      "lane": "market-next-yak",
+      "round": 0,
+      "cold": 430.3555420000048,
+      "warm": 289.5741660000058,
+      "load": 5.2,
+      "hash": "8324909a77ea"
+    },
+    {
+      "lane": "market-css-modules",
+      "round": 0,
+      "cold": 618.1490000000049,
+      "warm": 618.5719169999938,
+      "load": 5.2,
+      "hash": "e1fa9459ba98"
+    },
+    {
+      "lane": "market-css-modules",
+      "round": 1,
+      "cold": 597.3267500000075,
+      "warm": 630.2868339999986,
+      "load": 5.2,
+      "hash": "e1fa9459ba98"
+    },
+    {
+      "lane": "market-next-yak",
+      "round": 1,
+      "cold": 393.56100000001607,
+      "warm": 298.3645419999957,
+      "load": 5.2,
+      "hash": "8324909a77ea"
+    },
+    {
+      "lane": "market-styled-components",
+      "round": 1,
+      "cold": 153.09516699999222,
+      "warm": 148.3262499999837,
+      "load": 5.3,
+      "hash": "07c200a5db2c"
+    },
+    {
+      "lane": "market-emotion",
+      "round": 1,
+      "cold": 149.86041700001806,
+      "warm": 150.14333300001454,
+      "load": 5.3,
+      "hash": "0f06b16325d5"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 1,
+      "cold": 4986.214041999978,
+      "warm": 5117.4250410000095,
+      "load": 5.3,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-stylex",
+      "round": 1,
+      "cold": 1970.914374999993,
+      "warm": 1904.5644169999869,
+      "load": 5.1,
+      "hash": "1e831e384b3f"
+    },
+    {
+      "lane": "market-panda",
+      "round": 1,
+      "cold": 439.78329200000735,
+      "warm": 206.92116600001464,
+      "load": 5.1,
+      "hash": "a9fd65c5f5a2"
+    },
+    {
+      "lane": "market-vanilla-extract",
+      "round": 1,
+      "cold": 628.8821250000037,
+      "warm": 494.991875000007,
+      "load": 4.8,
+      "hash": "87c8137fa395"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 1,
+      "cold": 1895.6120829999854,
+      "warm": 1752.8342090000224,
+      "load": 4.8,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 1,
+      "cold": 730.5711249999877,
+      "warm": 598.1756670000032,
+      "load": 5.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 2,
+      "cold": 613.3068749999802,
+      "warm": 607.9649999999965,
+      "load": 5.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 2,
+      "cold": 1794.0980839999975,
+      "warm": 1739.9189170000027,
+      "load": 5.3,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-vanilla-extract",
+      "round": 2,
+      "cold": 635.9937079999945,
+      "warm": 507.7453749999986,
+      "load": 5.6,
+      "hash": "87c8137fa395"
+    },
+    {
+      "lane": "market-panda",
+      "round": 2,
+      "cold": 432.1228339999798,
+      "warm": 210.00141700002132,
+      "load": 5.6,
+      "hash": "a9fd65c5f5a2"
+    },
+    {
+      "lane": "market-stylex",
+      "round": 2,
+      "cold": 2107.182749999978,
+      "warm": 1907.2550829999964,
+      "load": 5.6,
+      "hash": "1e831e384b3f"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 2,
+      "cold": 5719.847125,
+      "warm": 5230.567582999996,
+      "load": 5.5,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-emotion",
+      "round": 2,
+      "cold": 198.647667000012,
+      "warm": 156.72329199998057,
+      "load": 6,
+      "hash": "0f06b16325d5"
+    },
+    {
+      "lane": "market-styled-components",
+      "round": 2,
+      "cold": 200.58204199999454,
+      "warm": 143.08916699999827,
+      "load": 6,
+      "hash": "07c200a5db2c"
+    },
+    {
+      "lane": "market-next-yak",
+      "round": 2,
+      "cold": 502.04099999999744,
+      "warm": 283.8902919999964,
+      "load": 6,
+      "hash": "8324909a77ea"
+    },
+    {
+      "lane": "market-css-modules",
+      "round": 2,
+      "cold": 675.4030419999908,
+      "warm": 594.1357500000158,
+      "load": 6,
+      "hash": "e1fa9459ba98"
+    },
+    {
+      "lane": "market-css-modules",
+      "round": 3,
+      "cold": 593.1097920000029,
+      "warm": 593.3340829999943,
+      "load": 6,
+      "hash": "e1fa9459ba98"
+    },
+    {
+      "lane": "market-next-yak",
+      "round": 3,
+      "cold": 392.12241699997685,
+      "warm": 291.2129999999888,
+      "load": 6,
+      "hash": "8324909a77ea"
+    },
+    {
+      "lane": "market-styled-components",
+      "round": 3,
+      "cold": 154.3080829999817,
+      "warm": 151.7776249999879,
+      "load": 6,
+      "hash": "07c200a5db2c"
+    },
+    {
+      "lane": "market-emotion",
+      "round": 3,
+      "cold": 145.26108300001943,
+      "warm": 149.0594169999822,
+      "load": 6,
+      "hash": "0f06b16325d5"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 3,
+      "cold": 5876.934041,
+      "warm": 5383.78895799999,
+      "load": 6,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-stylex",
+      "round": 3,
+      "cold": 2093.3783750000002,
+      "warm": 1927.630541999999,
+      "load": 6.1,
+      "hash": "1e831e384b3f"
+    },
+    {
+      "lane": "market-panda",
+      "round": 3,
+      "cold": 430.1103749999893,
+      "warm": 209.73695799999405,
+      "load": 6.4,
+      "hash": "a9fd65c5f5a2"
+    },
+    {
+      "lane": "market-vanilla-extract",
+      "round": 3,
+      "cold": 634.3855829999957,
+      "warm": 501.32950000002165,
+      "load": 6.4,
+      "hash": "87c8137fa395"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 3,
+      "cold": 1956.7108330000192,
+      "warm": 1740.751333000022,
+      "load": 6.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 3,
+      "cold": 767.2259170000034,
+      "warm": 644.3424589999777,
+      "load": 6.7,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 4,
+      "cold": 616.974332999991,
+      "warm": 618.9953329999989,
+      "load": 6.6,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 4,
+      "cold": 1771.9155829999945,
+      "warm": 1752.3571670000092,
+      "load": 6.6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-vanilla-extract",
+      "round": 4,
+      "cold": 495.04562500002794,
+      "warm": 494.07024999998976,
+      "load": 6.6,
+      "hash": "87c8137fa395"
+    },
+    {
+      "lane": "market-panda",
+      "round": 4,
+      "cold": 308.43479100000695,
+      "warm": 218.65366599999834,
+      "load": 6.6,
+      "hash": "a9fd65c5f5a2"
+    },
+    {
+      "lane": "market-stylex",
+      "round": 4,
+      "cold": 1878.5054999999993,
+      "warm": 1921.2363749999786,
+      "load": 6.6,
+      "hash": "1e831e384b3f"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 4,
+      "cold": 5208.256416999997,
+      "warm": 5123.444292000029,
+      "load": 6.3,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-emotion",
+      "round": 4,
+      "cold": 148.9017500000191,
+      "warm": 150.48583299998427,
+      "load": 6.7,
+      "hash": "0f06b16325d5"
+    },
+    {
+      "lane": "market-styled-components",
+      "round": 4,
+      "cold": 146.73629200004507,
+      "warm": 147.23562500003027,
+      "load": 6.7,
+      "hash": "07c200a5db2c"
+    },
+    {
+      "lane": "market-next-yak",
+      "round": 4,
+      "cold": 401.7154580000206,
+      "warm": 292.94087500002934,
+      "load": 6.7,
+      "hash": "8324909a77ea"
+    },
+    {
+      "lane": "market-css-modules",
+      "round": 4,
+      "cold": 599.170792000019,
+      "warm": 602.2759169999626,
+      "load": 6.7,
+      "hash": "e1fa9459ba98"
+    },
+    {
+      "lane": "market-css-modules",
+      "round": 5,
+      "cold": 606.6323330000159,
+      "warm": 598.6994999999879,
+      "load": 6.7,
+      "hash": "e1fa9459ba98"
+    },
+    {
+      "lane": "market-next-yak",
+      "round": 5,
+      "cold": 373.01358300005086,
+      "warm": 294.3955410000053,
+      "load": 6.7,
+      "hash": "8324909a77ea"
+    },
+    {
+      "lane": "market-styled-components",
+      "round": 5,
+      "cold": 155.59487500000978,
+      "warm": 150.51587499998277,
+      "load": 6.7,
+      "hash": "07c200a5db2c"
+    },
+    {
+      "lane": "market-emotion",
+      "round": 5,
+      "cold": 146.0869169999496,
+      "warm": 152.7658330000122,
+      "load": 6.7,
+      "hash": "0f06b16325d5"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 5,
+      "cold": 5198.176666999992,
+      "warm": 5221.658125000016,
+      "load": 6.7,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-stylex",
+      "round": 5,
+      "cold": 2111.2532920000376,
+      "warm": 1901.3803329999791,
+      "load": 6.1,
+      "hash": "1e831e384b3f"
+    },
+    {
+      "lane": "market-panda",
+      "round": 5,
+      "cold": 444.76070799998706,
+      "warm": 204.2516670000041,
+      "load": 6,
+      "hash": "a9fd65c5f5a2"
+    },
+    {
+      "lane": "market-vanilla-extract",
+      "round": 5,
+      "cold": 631.3875419999822,
+      "warm": 507.7904170000111,
+      "load": 6,
+      "hash": "87c8137fa395"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 5,
+      "cold": 1901.2663750000065,
+      "warm": 1748.8671249999898,
+      "load": 6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 5,
+      "cold": 745.1485839999514,
+      "warm": 609.5213750000112,
+      "load": 5.9,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 6,
+      "cold": 587.2202079999843,
+      "warm": 589.9945409999928,
+      "load": 5.9,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 6,
+      "cold": 1767.2707079999964,
+      "warm": 1730.6735000000335,
+      "load": 5.9,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-vanilla-extract",
+      "round": 6,
+      "cold": 529.2120829999913,
+      "warm": 501.9228330000187,
+      "load": 5.9,
+      "hash": "87c8137fa395"
+    },
+    {
+      "lane": "market-panda",
+      "round": 6,
+      "cold": 312.1928750000079,
+      "warm": 206.72937499999534,
+      "load": 5.9,
+      "hash": "a9fd65c5f5a2"
+    },
+    {
+      "lane": "market-stylex",
+      "round": 6,
+      "cold": 1903.4799999999814,
+      "warm": 1908.9450410000281,
+      "load": 5.9,
+      "hash": "1e831e384b3f"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 6,
+      "cold": 5116.130624999991,
+      "warm": 5052.6781670000055,
+      "load": 5.9,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-emotion",
+      "round": 6,
+      "cold": 200.747583999997,
+      "warm": 152.96979100001045,
+      "load": 5.5,
+      "hash": "0f06b16325d5"
+    },
+    {
+      "lane": "market-styled-components",
+      "round": 6,
+      "cold": 200.4657920000027,
+      "warm": 147.21287499996834,
+      "load": 5.5,
+      "hash": "07c200a5db2c"
+    },
+    {
+      "lane": "market-next-yak",
+      "round": 6,
+      "cold": 494.56904100003885,
+      "warm": 269.1166669999948,
+      "load": 5.5,
+      "hash": "8324909a77ea"
+    },
+    {
+      "lane": "market-css-modules",
+      "round": 6,
+      "cold": 686.8731249999837,
+      "warm": 651.0882920000004,
+      "load": 5.5,
+      "hash": "e1fa9459ba98"
+    }
+  ],
+  "sizes": {
+    "market-dx-styles": {
+      "jsRaw": 301559,
+      "jsGzip": 81719,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "4d8fcb4a3285"
+    },
+    "market-linaria": {
+      "jsRaw": 287341,
+      "jsGzip": 84026,
+      "cssRaw": 373779,
+      "cssGzip": 23841,
+      "hash": "29d0bb09b539"
+    },
+    "market-vanilla-extract": {
+      "jsRaw": 293304,
+      "jsGzip": 80261,
+      "cssRaw": 321566,
+      "cssGzip": 16866,
+      "hash": "87c8137fa395"
+    },
+    "market-panda": {
+      "jsRaw": 602894,
+      "jsGzip": 91741,
+      "cssRaw": 27395,
+      "cssGzip": 4315,
+      "hash": "a9fd65c5f5a2"
+    },
+    "market-stylex": {
+      "jsRaw": 452282,
+      "jsGzip": 86136,
+      "cssRaw": 29741,
+      "cssGzip": 5502,
+      "hash": "1e831e384b3f"
+    },
+    "market-compiled": {
+      "jsRaw": 386698,
+      "jsGzip": 85611,
+      "cssRaw": 22297,
+      "cssGzip": 5267,
+      "hash": "340c4cea3ce0"
+    },
+    "market-emotion": {
+      "jsRaw": 588723,
+      "jsGzip": 95698,
+      "cssRaw": 0,
+      "cssGzip": 0,
+      "hash": "0f06b16325d5"
+    },
+    "market-styled-components": {
+      "jsRaw": 705152,
+      "jsGzip": 99534,
+      "cssRaw": 0,
+      "cssGzip": 0,
+      "hash": "07c200a5db2c"
+    },
+    "market-next-yak": {
+      "jsRaw": 316074,
+      "jsGzip": 80824,
+      "cssRaw": 375612,
+      "cssGzip": 17791,
+      "hash": "8324909a77ea"
+    },
+    "market-css-modules": {
+      "jsRaw": 308786,
+      "jsGzip": 81273,
+      "cssRaw": 420364,
+      "cssGzip": 24060,
+      "hash": "e1fa9459ba98"
+    }
+  },
+  "browser": {
+    "market-dx-styles": {
+      "samples": [
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.9
+        },
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 5.9
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.7
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.7
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.5
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.5
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-linaria": {
+      "samples": [
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.6
+        },
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 5.6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.9
+        },
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 5.9
+        },
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 5.7
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.7
+        },
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 5.5
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.5
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-vanilla-extract": {
+      "samples": [
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.2
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.6
+        },
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 5.6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.9
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.9
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.7
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.7
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.8
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.5
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-panda": {
+      "samples": [
+        {
+          "fcp": 172,
+          "lcp": 172,
+          "load": 5.2
+        },
+        {
+          "fcp": 176,
+          "lcp": 176,
+          "load": 5.6
+        },
+        {
+          "fcp": 172,
+          "lcp": 172,
+          "load": 5.6
+        },
+        {
+          "fcp": 176,
+          "lcp": 176,
+          "load": 5.6
+        },
+        {
+          "fcp": 192,
+          "lcp": 192,
+          "load": 5.9
+        },
+        {
+          "fcp": 180,
+          "lcp": 180,
+          "load": 5.9
+        },
+        {
+          "fcp": 172,
+          "lcp": 172,
+          "load": 5.7
+        },
+        {
+          "fcp": 200,
+          "lcp": 200,
+          "load": 5.8
+        },
+        {
+          "fcp": 176,
+          "lcp": 176,
+          "load": 5.8
+        },
+        {
+          "fcp": 172,
+          "lcp": 172,
+          "load": 5.5
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-stylex": {
+      "samples": [
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.2
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.9
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 5.9
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 5.7
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.8
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.8
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.5
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-compiled": {
+      "samples": [
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.2
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.6
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 5.6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.9
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 5.9
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.7
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 5.8
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.8
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 5.5
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 5,
+      "examples": [
+        "#2056: A|inline|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto|none|3px|rgb(17, 104, 141)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}  ≠  A|inline|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto|none|3px|rgb(209, 37, 31)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}",
+        "#2110: A|inline|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto|none|3px|rgb(17, 104, 141)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}  ≠  A|inline|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto|none|3px|rgb(209, 37, 31)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}",
+        "#3633: A|block|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|94.0938px|18px|none|3px|rgb(17, 104, 141)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}  ≠  A|block|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|94.0938px|18px|none|3px|rgb(209, 37, 31)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}",
+        "#3634: A|block|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|14px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|21px|none|1|none|107.406px|21px|none|3px|rgb(17, 104, 141)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}  ≠  A|block|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|14px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|21px|none|1|none|107.406px|21px|none|3px|rgb(209, 37, 31)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}",
+        "#3635: A|block|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|16px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|24px|none|1|none|115.406px|24px|none|3px|rgb(17, 104, 141)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}  ≠  A|block|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|16px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|24px|none|1|none|115.406px|24px|none|3px|rgb(209, 37, 31)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}"
+      ]
+    },
+    "market-emotion": {
+      "samples": [
+        {
+          "fcp": 192,
+          "lcp": 192,
+          "load": 5.2
+        },
+        {
+          "fcp": 196,
+          "lcp": 196,
+          "load": 5.6
+        },
+        {
+          "fcp": 196,
+          "lcp": 196,
+          "load": 5.6
+        },
+        {
+          "fcp": 196,
+          "lcp": 196,
+          "load": 5.6
+        },
+        {
+          "fcp": 204,
+          "lcp": 204,
+          "load": 5.9
+        },
+        {
+          "fcp": 196,
+          "lcp": 196,
+          "load": 5.9
+        },
+        {
+          "fcp": 196,
+          "lcp": 196,
+          "load": 5.7
+        },
+        {
+          "fcp": 196,
+          "lcp": 196,
+          "load": 5.8
+        },
+        {
+          "fcp": 192,
+          "lcp": 192,
+          "load": 5.8
+        },
+        {
+          "fcp": 200,
+          "lcp": 200,
+          "load": 5.5
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-styled-components": {
+      "samples": [
+        {
+          "fcp": 204,
+          "lcp": 204,
+          "load": 5.2
+        },
+        {
+          "fcp": 200,
+          "lcp": 200,
+          "load": 5.6
+        },
+        {
+          "fcp": 204,
+          "lcp": 204,
+          "load": 5.6
+        },
+        {
+          "fcp": 188,
+          "lcp": 188,
+          "load": 5.6
+        },
+        {
+          "fcp": 204,
+          "lcp": 204,
+          "load": 5.9
+        },
+        {
+          "fcp": 192,
+          "lcp": 192,
+          "load": 5.9
+        },
+        {
+          "fcp": 184,
+          "lcp": 184,
+          "load": 5.7
+        },
+        {
+          "fcp": 188,
+          "lcp": 188,
+          "load": 5.8
+        },
+        {
+          "fcp": 200,
+          "lcp": 200,
+          "load": 5.8
+        },
+        {
+          "fcp": 200,
+          "lcp": 200,
+          "load": 5.5
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-next-yak": {
+      "samples": [
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.2
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 5.6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.6
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 5.6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.6
+        },
+        {
+          "fcp": 172,
+          "lcp": 172,
+          "load": 5.7
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.7
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 5.8
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.8
+        },
+        {
+          "fcp": 168,
+          "lcp": 168,
+          "load": 5.5
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-css-modules": {
+      "samples": [
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 5.2
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.6
+        },
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 5.6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.6
+        },
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 5.7
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.7
+        },
+        {
+          "fcp": 140,
+          "lcp": 140,
+          "load": 5.8
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.8
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.5
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    }
+  }
+}
