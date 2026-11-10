@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "schema": 1,
+    "timeOrigin": 1794001153062.934,
+    "graph": {
+      "leaves": 2000,
+      "groups": 30,
+      "depth": 5,
+      "templates": 2,
+      "fanout": 1,
+      "declarations": 5,
+      "heavyEvery": 100,
+      "heavyTemplates": 150,
+      "runtimeModules": 11000,
+      "sharedGroups": 20,
+      "componentFields": 40
+    },
+    "sizes": [
+      1
+    ],
+    "repeats": 3,
+    "node": "v24.19.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpu": "Apple M5 Max",
+    "parallel": 0,
+    "webpack": "5.108.4",
+    "wyw": "2.7.0",
+    "linaria": "8.2.0",
+    "cache": "memory; new compiler per cold run",
+    "timing": "webpack compilation wall time; not WYW CPU time",
+    "stages": true,
+    "webpackParallelism": 1
+  },
+  "coldMs": 13579,
+  "scenarios": [
+    {
+      "scenario": "root:1",
+      "n": 3,
+      "minMs": 4946,
+      "medianMs": 5614,
+      "maxMs": 5932
+    },
+    {
+      "scenario": "leaf:1",
+      "n": 3,
+      "minMs": 508,
+      "medianMs": 540,
+      "maxMs": 559
+    }
+  ]
+}

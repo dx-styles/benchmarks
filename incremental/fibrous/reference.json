@@ -1,0 +1,36 @@
+{
+  "name": "anonymized-application-reference",
+  "machine": "Apple M5 Max",
+  "node": "24.19.0",
+  "wyw": "2.7.0",
+  "linaria": "8.2.0",
+  "ordinary": {"coldMs": 17161, "leafMs": 3886, "sharedTokenMs": 8146},
+  "serialTraced": {
+    "cold": {
+      "wallMs": 22755,
+      "transformMs": 3988.807,
+      "collectMs": 2178.063,
+      "resolveSumMs": 208.597,
+      "resolveUnionMs": 208.597,
+      "resolveCount": 9370,
+      "resolvePeak": 1,
+      "extractMs": 129.279
+    },
+    "leaf": {"wallMs": 3623, "transformMs": 2.663, "collectMs": 2.494},
+    "sharedToken": {
+      "wallMs": 10667,
+      "builtModules": 1323,
+      "transformMs": 2909.326,
+      "collectMs": 1640.303,
+      "resolveSumMedianMs": 22064.709,
+      "resolveUnionMedianMs": 1747.865,
+      "resolveCountMedian": 8434,
+      "resolvePeakMedian": 98
+    }
+  },
+  "caveats": [
+    "One cold sample per setting; rebuild medians use three samples after warmup.",
+    "Inclusive action sums are not CPU time and cannot be added.",
+    "Synthetic CSS assets and bundler configuration differ; the reference is a calibration target, not a competing lane."
+  ]
+}

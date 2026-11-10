@@ -24,6 +24,12 @@ Options: `--rounds=7`, `--fcp=10`, `--max-load=8`, `--no-install` (reuse install
 
 ## The scene
 
+For a separate webpack watcher workload focused on shared-dependency invalidation,
+see [Fibrous](./incremental/fibrous/README.md). It includes cold builds, leaf/batch edits,
+shared-token and composition edits, plus WYW action traces and a webpack concurrency
+experiment. It has its own pinned pnpm installation and does not participate in the
+Vite market rankings above.
+
 Everything is generated from one description in `scene/`, so every library renders the same
 page with the same design:
 

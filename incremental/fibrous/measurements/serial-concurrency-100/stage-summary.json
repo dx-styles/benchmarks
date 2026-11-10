@@ -1,0 +1,241 @@
+{
+  "note": "Inclusive action/method duration sums in ms; nested stages overlap and must not be added or interpreted as CPU percentages. Instrumented serial run.",
+  "rows": [
+    {
+      "scenario": "cold:0",
+      "n": 1,
+      "wallMs": 9711,
+      "actionsMs": {
+        "collect": 2066.4939520000116,
+        "evalFile": 9.63891699998021,
+        "extract": 107.63025700001344,
+        "processEntrypoint": 27.996260999996593,
+        "resolveImports": 143.6516769999689,
+        "transform": 3132.0783690000426,
+        "workflow": 31.25475499994718
+      },
+      "methodsMs": {
+        "createEntrypoint": 199.69809999999416,
+        "transform:collect:applyProcessors": 1561.3651049999717,
+        "transform:collect:applyProcessors:cleanup": 1416.3852619999743,
+        "transform:collect:applyProcessors:processors": 100.0861399999958,
+        "transform:collect:normalize": 473.56099999997423,
+        "transform:collect:processorRuntime": 30.009897999974783,
+        "transform:collect:sourceMap": 15.198841000006723,
+        "transform:preeval": 1783.7936550000086,
+        "transform:preeval:importMetaEnv": 8.151724999977887,
+        "transform:preeval:processTemplate": 1768.2149399999944,
+        "transform:preeval:processTemplate:deps": 211.47388699999465,
+        "transform:preeval:processTemplate:imports": 19.03895100000591,
+        "transform:preeval:processTemplate:imports:analysis": 3.3616910000218923,
+        "transform:preeval:processTemplate:imports:lookup": 8.330441000000064,
+        "transform:preeval:processTemplate:processors": 65.65117300000384,
+        "transform:preeval:processTemplate:usages": 236.71083199998793,
+        "transform:preeval:processTemplate:usedNames": 86.46603999999206,
+        "transform:preeval:removeDangerousCode": 1076.7715940000035,
+        "transform:preeval:staticMetadata": 11.755835000002662
+      },
+      "actionIntervals": {
+        "workflow": {
+          "count": 10005,
+          "sumMs": 31.254754999949455,
+          "unionMs": 31.254754999949455,
+          "peak": 1
+        },
+        "processEntrypoint": {
+          "count": 4002,
+          "sumMs": 27.996260999994774,
+          "unionMs": 27.996260999994774,
+          "peak": 1
+        },
+        "transform": {
+          "count": 12821,
+          "sumMs": 3132.0783690000035,
+          "unionMs": 3132.0783690000035,
+          "peak": 1
+        },
+        "resolveImports": {
+          "count": 10820,
+          "sumMs": 143.6516769999787,
+          "unionMs": 143.6516769999787,
+          "peak": 1
+        },
+        "evalFile": {
+          "count": 2001,
+          "sumMs": 9.638916999981575,
+          "unionMs": 9.638916999981575,
+          "peak": 1
+        },
+        "collect": {
+          "count": 2001,
+          "sumMs": 2066.4939520000116,
+          "unionMs": 2066.4939520000116,
+          "peak": 1
+        },
+        "extract": {
+          "count": 2001,
+          "sumMs": 107.63025700001549,
+          "unionMs": 107.63025700001549,
+          "peak": 1
+        }
+      }
+    },
+    {
+      "scenario": "root:1",
+      "n": 3,
+      "wallMs": 4533,
+      "actionsMs": {
+        "collect": 1267.2407050000184,
+        "evalFile": 3742.825279999968,
+        "extract": 54.14216099991245,
+        "processEntrypoint": 1275.3299170000828,
+        "resolveImports": 7282.069311000236,
+        "transform": 1749.9020909997853,
+        "workflow": 18.25177300001087
+      },
+      "methodsMs": {
+        "createEntrypoint": 127.79056599998148,
+        "transform:collect:applyProcessors": 966.0847850000355,
+        "transform:collect:applyProcessors:cleanup": 870.6986179999076,
+        "transform:collect:applyProcessors:processors": 60.00790799993774,
+        "transform:collect:normalize": 282.01068999997733,
+        "transform:collect:processorRuntime": 18.788613000066107,
+        "transform:collect:sourceMap": 7.484675000028801,
+        "transform:preeval": 1124.0048060000918,
+        "transform:preeval:importMetaEnv": 2.961547999871982,
+        "transform:preeval:processTemplate": 1112.102565999976,
+        "transform:preeval:processTemplate:deps": 55.67950900005235,
+        "transform:preeval:processTemplate:imports": 10.651763000023493,
+        "transform:preeval:processTemplate:imports:analysis": 2.5535319999944477,
+        "transform:preeval:processTemplate:imports:lookup": 3.1073539999852073,
+        "transform:preeval:processTemplate:processors": 36.32298299998365,
+        "transform:preeval:processTemplate:usages": 222.6215039998824,
+        "transform:preeval:processTemplate:usedNames": 58.12037500004226,
+        "transform:preeval:removeDangerousCode": 680.4639139999781,
+        "transform:preeval:staticMetadata": 0.05475000000296859
+      },
+      "actionIntervals": {
+        "workflow": {
+          "count": 6700,
+          "sumMs": 18.25177300001087,
+          "unionMs": 18.25177300001087,
+          "peak": 1
+        },
+        "processEntrypoint": {
+          "count": 2680,
+          "sumMs": 1275.3299170000828,
+          "unionMs": 57.28058500001862,
+          "peak": 100
+        },
+        "transform": {
+          "count": 9246,
+          "sumMs": 1749.9020909997853,
+          "unionMs": 1749.9020909997853,
+          "peak": 1
+        },
+        "resolveImports": {
+          "count": 7906,
+          "sumMs": 7282.0693109999775,
+          "unionMs": 1233.9808360000534,
+          "peak": 100
+        },
+        "evalFile": {
+          "count": 1340,
+          "sumMs": 3742.825279999968,
+          "unionMs": 167.80979300001127,
+          "peak": 50
+        },
+        "collect": {
+          "count": 1340,
+          "sumMs": 1267.2407050000184,
+          "unionMs": 1267.2407050000184,
+          "peak": 1
+        },
+        "extract": {
+          "count": 1340,
+          "sumMs": 54.14216099991245,
+          "unionMs": 54.14216099991245,
+          "peak": 1
+        }
+      }
+    },
+    {
+      "scenario": "leaf:1",
+      "n": 3,
+      "wallMs": 518,
+      "actionsMs": {
+        "collect": 1.29912499999773,
+        "evalFile": 0.008458000000246102,
+        "extract": 0.06683300000076997,
+        "processEntrypoint": 0.025291999998444226,
+        "resolveImports": 0.09229200000481796,
+        "transform": 2.2858759999980975,
+        "workflow": 0.027750000001105946
+      },
+      "methodsMs": {
+        "createEntrypoint": 0.6937079999988782,
+        "transform:collect:applyProcessors": 0.9882089999991877,
+        "transform:collect:applyProcessors:cleanup": 0.9191659999996773,
+        "transform:collect:applyProcessors:processors": 0.03695799999695737,
+        "transform:collect:normalize": 0.2922080000025744,
+        "transform:collect:processorRuntime": 0.01108399999793619,
+        "transform:collect:sourceMap": 0.008041000000957865,
+        "transform:preeval": 1.6490000000012515,
+        "transform:preeval:importMetaEnv": 0.004415999999764608,
+        "transform:preeval:processTemplate": 1.6239169999971637,
+        "transform:preeval:processTemplate:deps": 0.5817920000008598,
+        "transform:preeval:processTemplate:imports": 0.013583999996626517,
+        "transform:preeval:processTemplate:imports:analysis": 0.0017079999997804407,
+        "transform:preeval:processTemplate:imports:lookup": 0.007958999998663785,
+        "transform:preeval:processTemplate:processors": 0.04724999999598367,
+        "transform:preeval:processTemplate:usages": 0.14512499999909778,
+        "transform:preeval:processTemplate:usedNames": 0.04408300000068266,
+        "transform:preeval:removeDangerousCode": 0.7381669999995211
+      },
+      "actionIntervals": {
+        "workflow": {
+          "count": 5,
+          "sumMs": 0.027750000001105946,
+          "unionMs": 0.027750000001105946,
+          "peak": 1
+        },
+        "processEntrypoint": {
+          "count": 2,
+          "sumMs": 0.025291999998444226,
+          "unionMs": 0.025291999998444226,
+          "peak": 1
+        },
+        "transform": {
+          "count": 5,
+          "sumMs": 2.2858759999980975,
+          "unionMs": 2.2858759999980975,
+          "peak": 1
+        },
+        "resolveImports": {
+          "count": 4,
+          "sumMs": 0.09229200000481796,
+          "unionMs": 0.09229200000481796,
+          "peak": 1
+        },
+        "evalFile": {
+          "count": 1,
+          "sumMs": 0.008458000000246102,
+          "unionMs": 0.008458000000246102,
+          "peak": 1
+        },
+        "collect": {
+          "count": 1,
+          "sumMs": 1.29912499999773,
+          "unionMs": 1.29912499999773,
+          "peak": 1
+        },
+        "extract": {
+          "count": 1,
+          "sumMs": 0.06683300000076997,
+          "unionMs": 0.06683300000076997,
+          "peak": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{"kind":"leaf","size":1,"repetition":0,"timeMs":647,"latencyMs":1036.3072089999987,"builtModules":1,"hash":"474adc7bcff0889b9493","files":["leaf-0.js"],"warmup":true}
+{"kind":"root","size":1,"repetition":0,"timeMs":3711,"latencyMs":4110.880708000001,"builtModules":1340,"hash":"82a4ed817518a1f67c55","files":["root.js"],"warmup":true}
+{"kind":"root","size":1,"repetition":1,"timeMs":3474,"latencyMs":3841.9987500000007,"builtModules":1340,"hash":"9a1f80b54076848401ff","files":["root.js"],"warmup":false}
+{"kind":"leaf","size":1,"repetition":1,"timeMs":431,"latencyMs":840.8209159999969,"builtModules":1,"hash":"65076e5553d8143d42e1","files":["leaf-0.js"],"warmup":false}
+{"kind":"leaf","size":1,"repetition":2,"timeMs":485,"latencyMs":861.1043750000026,"builtModules":1,"hash":"d6acb25d3a583fcdaac7","files":["leaf-0.js"],"warmup":false}
+{"kind":"root","size":1,"repetition":2,"timeMs":3488,"latencyMs":3860.169584000003,"builtModules":1340,"hash":"ad3584f033a03abd99a4","files":["root.js"],"warmup":false}
+{"kind":"root","size":1,"repetition":3,"timeMs":3596,"latencyMs":3972.618666999999,"builtModules":1340,"hash":"818ef3708d3c52eb48cb","files":["root.js"],"warmup":false}
+{"kind":"leaf","size":1,"repetition":3,"timeMs":412,"latencyMs":799.9180420000012,"builtModules":1,"hash":"49f11f2998ff5305f826","files":["leaf-0.js"],"warmup":false}
