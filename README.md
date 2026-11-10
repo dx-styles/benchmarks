@@ -97,37 +97,41 @@ dx-styles 1.3.0 (the release whose range accepts all of them), and adds dx-style
 and 2.7.1 and dx-styles 1.5.0 on 2.7.1 (1.5.0 requires 2.7.1). Each combination runs in two
 layouts: the per-component modules above, and all styles in one module.
 
-## What the run of 2026-11-06 shows
+## What the run of 2026-11-10 shows
 
 Full tables: [RESULTS.md](./RESULTS.md). Apple M3 Max, 16 cores, macOS 26.6.2, Node 24.4.1;
-medians of 7 warm builds.
+medians of 7 warm builds, percentages from the unrounded medians.
 
 - **dx-styles across wyw-in-js releases.** With dx-styles 1.3.0 and per-component modules the
-  build takes 1.43 s on wyw-in-js 2.3.0, 1.35 s on 2.4.4, 0.91 s on 2.5.1 and 0.68 s on 2.6.0
-  and 2.7.1; with one styles module, 1.94 s → 1.78 → 1.34 → 0.78 → 0.78 s. Every step but 2.6.0
-  → 2.7.1 is outside the noise (the ranges do not overlap), and each dx-styles release builds a
-  byte-identical bundle on every wyw-in-js release.
-- **dx-styles 1.4.1 on 2.4.4 → 1.5.0 on 2.7.1:** 1.34 s → 0.68 s (−49%) with per-component
-  modules, 1.79 s → 0.78 s (−56%) with one module. The gain comes from the engine: on 2.7.1,
-  dx-styles 1.4.1 and 1.5.0 build byte-identical bundles in the same time, and 1.5.0 requires
-  wyw-in-js 2.7.1.
-- **Libraries (warm build):** styled-components 0.16 s, Emotion 0.17 s, Panda 0.21 s, next-yak
-  0.30 s, vanilla-extract 0.56 s, CSS Modules 0.66 s, dx-styles 0.68 s, Linaria 1.86 s, StyleX
-  2.06 s, Compiled 5.93 s.
+  build takes 1.31 s on wyw-in-js 2.3.0, 1.23 s on 2.4.4, 0.79 s on 2.5.1, 0.61 s on 2.6.0 and
+  0.59 s on 2.7.1; with one styles module, 1.81 s → 1.67 → 1.22 → 0.70 → 0.71 s. Every step but
+  2.6.0 → 2.7.1 is outside the noise (the ranges do not overlap), with one exception: with
+  per-component modules the ranges of 2.3.0 and 2.4.4 overlap, although 2.4.4 was faster in
+  each of the 7 rounds. Each dx-styles release builds a byte-identical bundle on every
+  wyw-in-js release.
+- **dx-styles 1.4.1 on 2.4.4 → 1.5.0 on 2.7.1:** 1.22 s → 0.60 s (−50%) with per-component
+  modules, 1.66 s → 0.70 s (−58%) with one module. The gain comes from the engine: on 2.7.1,
+  dx-styles 1.4.1 and 1.5.0 build byte-identical bundles in the same time (0.60 s both with
+  per-component modules; 0.71 s and 0.70 s with one module, the ranges overlap), and 1.5.0
+  requires wyw-in-js 2.7.1.
+- **Libraries (warm build):** styled-components 0.15 s, Emotion 0.15 s, Panda 0.21 s, next-yak
+  0.29 s, vanilla-extract 0.50 s, CSS Modules 0.60 s, dx-styles 0.61 s, Linaria 1.75 s, StyleX
+  1.91 s, Compiled 5.19 s.
 - **The Linaria lane** runs on the same engine as dx-styles, wyw-in-js 2.7.1. Its gap comes from
   the token model of the port: its styles interpolate tokens from a JS object that the engine
   evaluates for each of the 41 style modules, while dx-styles declares a token contract that its
   processors resolve without evaluation. Written as static CSS variables, the same Linaria scene
-  builds in 0.38 s with an output of the same size (`npm run bench:diag`).
+  builds in 0.34 s with an output of the same size (`npm run bench:diag`).
 - **wyw-in-js worker threads** (`parallel`, experimental since 2.6.0, measured on 2.7.1 with
   `npm run bench:diag`) pay off where the engine evaluates a lot in every module: the Linaria
-  lane goes from 1.88 s to 1.03 s. Elsewhere they give little or cost time: dx-styles with
-  per-component modules 0.67 s → 0.58 s (the ranges touch), with one styles module 0.78 s →
-  0.99 s (one file cannot be split across workers), Linaria with static CSS variables 0.38 s →
-  0.43 s. Eight workers do no better than the default four (min(4, cores − 1)). The output is
+  lane goes from 1.76 s to 1.01 s. Elsewhere they give little or cost time: dx-styles with
+  per-component modules 0.60 s → 0.54 s (−10%), with one styles module 0.72 s → 0.92 s (one
+  file cannot be split across workers), Linaria with static CSS variables 0.34 s → 0.39 s.
+  Eight workers do no better than the default four (min(4, cores − 1)). The output is
   byte-identical with and without workers.
 - **Render parity:** every lane but Compiled renders all 3,642 elements with the same computed
-  styles as dx-styles. With its default class hash, Compiled 2.0.0 gives two atomic declarations,
+  styles as dx-styles, at rest and in each of the four states. With its default class hash,
+  Compiled 2.0.0 gives two atomic declarations,
   `color: var(--tk-color-danger600)` and `color: var(--tk-color-info800)`, the same class name, so
   5 elements get the wrong color (a known issue,
   [atlassian-labs/compiled#1423](https://github.com/atlassian-labs/compiled/issues/1423)); with
@@ -137,23 +141,38 @@ medians of 7 warm builds.
 
 ## Where dx-styles does not win
 
-- **Build time.** The runtime libraries do no build-time extraction (styled-components 0.16 s,
-  Emotion 0.17 s); Panda (0.21 s), next-yak (0.30 s) and vanilla-extract (0.56 s) build faster
-  than dx-styles (0.68 s), and CSS Modules with no library at all (0.66 s) is level with it.
-  Linaria with static CSS variables (0.38 s) shows what the dx-styles processors (token
+- **Build time.** The runtime libraries do no build-time extraction (styled-components 0.15 s,
+  Emotion 0.15 s); Panda (0.21 s), next-yak (0.29 s) and vanilla-extract (0.50 s) build faster
+  than dx-styles (0.61 s), and CSS Modules with no library at all (0.60 s) is level with it.
+  Linaria with static CSS variables (0.34 s) shows what the dx-styles processors (token
   contract, recipes) cost on top of the shared engine: about 0.3 s on this scene.
 - **Size.** dx-styles ships 99.4 KB gzip in total, more than the atomic engines (Compiled
-  88.7 KB, Panda 89.2 KB, StyleX 89.5 KB), Emotion (93.5 KB), vanilla-extract (94.9 KB),
+  88.7 KB, StyleX 89.5 KB, Panda 93.8 KB), Emotion (93.5 KB), vanilla-extract (94.9 KB),
   next-yak (96.3 KB) and styled-components (97.2 KB). Its CSS is 382 KB raw against 314 KB for
   vanilla-extract, which hashes its token variable names; dx-styles keeps them readable
   (`--tk-color-accent600`) because they are the theming contract.
-- **First paint.** dx-styles (162 ms) is level with CSS Modules, vanilla-extract and Linaria
-  (156–160 ms), not ahead of them; the runtime libraries paint later (208–212 ms).
+- **First paint.** dx-styles (152 ms) is level with CSS Modules, vanilla-extract and Linaria
+  (148 ms each), not ahead of them; the runtime libraries paint later (196–200 ms).
+
+## Changes since the first published run
+
+The first run, of 2026-11-06, stays in `results/` (`2026-11-06-*`).
+
+- **The Panda lane is corrected.** In the first run it was built without its state rules. The
+  generated config named no preset, and without one Panda 2.4.0 defines no conditions: every
+  `_hover`, `_active`, `_focusVisible` and `_disabled` block was dropped without a warning. The
+  parity check compared resting styles only and did not see it. The config now loads
+  `@pandacss/preset-base` and the check covers the four states. Panda's warm build measures
+  0.21 s in both runs, while the other library lanes were 4–14% slower in the first run; its
+  output went from 89.2 KB to 93.8 KB gzip.
+- **Times moved with the session.** Across the wyw-in-js series the builds of the first run
+  were 7–15% slower. For dx-styles 1.4.1 on 2.4.4 → 1.5.0 on 2.7.1 it measured 1.34 s → 0.68 s
+  (−49%) with per-component modules and 1.79 s → 0.78 s (−56%) with one module.
 
 ## Caveats
 
 - One machine, one scene. Build times are wall clock and move with the machine's load; compare
-  lanes within one run, not across machines.
+  lanes within one run, not across runs or machines.
 - The scene is generated: it is large and regular on purpose, which is not how every app looks.
 - First paint is measured on a fast local machine with no throttling; at this size it is
   dominated by React rendering the page.
