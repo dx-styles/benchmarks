@@ -56,6 +56,10 @@ export const generate = (): LaneSource => {
     'import { defineConfig } from "@pandacss/dev";',
     "",
     "export default defineConfig({",
+    // Without a preset Panda 2.4.0 defines no conditions: `_hover`, `_active`, `_focusVisible`
+    // and `_disabled` blocks would be dropped without a warning. The tokens are the scene's own,
+    // so only the base preset is loaded, not a theme preset.
+    '  presets: ["@pandacss/preset-base"],',
     "  preflight: false,",
     '  include: ["./src/**/*.{ts,tsx}"],',
     "  exclude: [],",

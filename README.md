@@ -45,7 +45,7 @@ page with the same design:
 | dx-styles | 1.5.0 | `createTokenContract` + `createTheme` | `css`, `recipe` | `@wyw-in-js/vite` 2.7.1 |
 | Linaria | 8.3.0 | CSS variables on the app root, an evaluated JS object | `css` (a class per variant) | `@wyw-in-js/vite` 2.7.1 |
 | vanilla-extract | 1.21.3 | `createThemeContract` + `createTheme` | `style`, `recipe` | `@vanilla-extract/vite-plugin` 5.2.6 |
-| Panda | 2.4.0 | config tokens | `css`, `cva` | `panda codegen` + PostCSS |
+| Panda | 2.4.0 | config tokens | `css`, `cva` | `panda codegen` + PostCSS, with `@pandacss/preset-base` |
 | StyleX | 0.19.1 | `defineVars` | `stylex.create`, `stylex.props` | `@stylexjs/unplugin` |
 | Compiled | 2.0.0 | CSS variables on the app root | `css`, `cssMap`, `css` prop | `@compiled/vite-plugin` 2.0.4, extraction on |
 | Emotion | 11.14 | CSS variables on the app root | `@emotion/styled` objects | none (runtime) |

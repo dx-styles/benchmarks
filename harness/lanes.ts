@@ -141,7 +141,7 @@ export const LANES: Lane[] = [
     "@vanilla-extract/recipes": "0.5.7",
     "@vanilla-extract/vite-plugin": "5.2.6",
   }),
-  lane("market-panda", "market", "panda", "app", "Panda 2.4.0", { "@pandacss/dev": "2.4.0", postcss: "8.5.32" }),
+  lane("market-panda", "market", "panda", "app", "Panda 2.4.0", { "@pandacss/dev": "2.4.0", "@pandacss/preset-base": "2.4.0", postcss: "8.5.32" }),
   lane("market-stylex", "market", "stylex", "app", "StyleX 0.19.1", { "@stylexjs/stylex": "0.19.1", "@stylexjs/unplugin": "0.19.1" }),
   lane(
     "market-compiled",
