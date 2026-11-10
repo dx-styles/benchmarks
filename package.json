@@ -16,7 +16,8 @@
     "report": "node harness/cli.ts report",
     "check-release-age": "node harness/release-age.ts",
     "bench:diag": "node harness/cli.ts diag",
-    "summary": "node harness/cli.ts summary"
+    "summary": "node harness/cli.ts summary",
+    "test": "node --test harness/*.test.ts"
   },
   "devDependencies": {
     "playwright": "1.64.1"

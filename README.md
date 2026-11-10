@@ -83,9 +83,12 @@ shared engine costs, not a competitor. CSS Modules is the baseline with no CSS-i
 - **First paint.** Headless Chromium (Playwright) loads each built page from a local server in a
   fresh context and reads `first-contentful-paint` and `largest-contentful-paint`: 10 loads per
   lane after a warm-up, interleaved across lanes.
-- **Render parity.** On the warm-up load the harness reads 22 computed properties (colors,
-  borders, radii, padding, gap, type, shadow, opacity, width, height, …) of every element and
-  compares them with the dx-styles lane. Hover, focus and active states are not compared.
+- **Render parity.** On the warm-up load the harness reads 26 computed properties (colors,
+  borders, radii, padding, gap, type, shadow, opacity, outline, width, height, …) of every
+  element and compares them with the dx-styles lane: at rest, and again in each of the
+  `:hover`, `:active`, `:focus-visible` and `:disabled` states. A state is switched on for the
+  whole page by rewriting its pseudo-class in the style rules, so the check reads the styles
+  the state applies without moving a pointer or the focus.
 
 ## dx-styles across wyw-in-js releases
 
