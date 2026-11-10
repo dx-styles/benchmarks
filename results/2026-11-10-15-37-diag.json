@@ -1,0 +1,1720 @@
+{
+  "group": "diag",
+  "environment": {
+    "date": "2026-11-10 15:45 UTC",
+    "machine": "Apple M3 Max",
+    "cores": 16,
+    "memoryGb": 64,
+    "os": "macOS 26.6.2",
+    "node": "24.4.1",
+    "npm": "11.4.2",
+    "chromium": "156.0.8078.4",
+    "benchCommit": "d16bd58",
+    "cards": 120,
+    "rounds": 7,
+    "maxLoad": 8
+  },
+  "lanes": [
+    {
+      "id": "market-dx-styles",
+      "group": "market",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.5.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "market-linaria",
+      "group": "market",
+      "lib": "linaria",
+      "layout": "app",
+      "label": "Linaria 8.3.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "market-compiled",
+      "group": "market",
+      "lib": "compiled",
+      "layout": "app",
+      "label": "Compiled 2.0.0",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      }
+    },
+    {
+      "id": "wyw-single-dx1.5.0-wyw2.7.1",
+      "group": "wyw",
+      "lib": "dx-styles",
+      "layout": "single",
+      "label": "dx-styles 1.5.0, one module · wyw 2.7.1",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      }
+    },
+    {
+      "id": "diag-linaria-static-vars",
+      "group": "diag",
+      "lib": "linaria",
+      "layout": "app",
+      "label": "Linaria 8.3.0, static CSS variables",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "staticVars": true
+      }
+    },
+    {
+      "id": "diag-compiled-collision-resistant",
+      "group": "diag",
+      "lib": "compiled",
+      "layout": "app",
+      "label": "Compiled 2.0.0, collisionResistantHash",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      },
+      "overrides": {},
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@compiled/react": "2.0.0",
+        "@compiled/vite-plugin": "2.0.4"
+      },
+      "options": {
+        "collisionResistantHash": true
+      }
+    },
+    {
+      "id": "diag-dx-styles-parallel",
+      "group": "diag",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.5.0, parallel",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "parallel": true
+      }
+    },
+    {
+      "id": "diag-dx-styles-parallel-8",
+      "group": "diag",
+      "lib": "dx-styles",
+      "layout": "app",
+      "label": "dx-styles 1.5.0, parallel: 8",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "parallel": 8
+      }
+    },
+    {
+      "id": "diag-dx-styles-single-parallel",
+      "group": "diag",
+      "lib": "dx-styles",
+      "layout": "single",
+      "label": "dx-styles 1.5.0, one module, parallel",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "dx-styles": "1.5.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "parallel": true
+      }
+    },
+    {
+      "id": "diag-linaria-parallel",
+      "group": "diag",
+      "lib": "linaria",
+      "layout": "app",
+      "label": "Linaria 8.3.0, parallel",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "parallel": true
+      }
+    },
+    {
+      "id": "diag-linaria-static-vars-parallel",
+      "group": "diag",
+      "lib": "linaria",
+      "layout": "app",
+      "label": "Linaria 8.3.0, static CSS variables, parallel",
+      "deps": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "overrides": {
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1",
+        "@wyw-in-js/vite": "2.7.1"
+      },
+      "watch": {
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "vite": "8.3.5",
+        "@vitejs/plugin-react": "6.1.2",
+        "@linaria/core": "8.3.0",
+        "@wyw-in-js/vite": "2.7.1",
+        "@wyw-in-js/transform": "2.7.1",
+        "@wyw-in-js/processor-utils": "2.7.1",
+        "@wyw-in-js/shared": "2.7.1"
+      },
+      "options": {
+        "staticVars": true,
+        "parallel": true
+      }
+    }
+  ],
+  "builds": [
+    {
+      "lane": "market-dx-styles",
+      "round": 0,
+      "cold": 768.7658750000119,
+      "warm": 611.2017080000078,
+      "load": 7.6,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 0,
+      "cold": 1905.3098340000142,
+      "warm": 1761.9758750000037,
+      "load": 7.2,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 0,
+      "cold": 5795.968958000012,
+      "warm": 5055.886790999997,
+      "load": 7.2,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 0,
+      "cold": 864.779749999987,
+      "warm": 728.986957999994,
+      "load": 6.2,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 0,
+      "cold": 470.44854199999827,
+      "warm": 324.56795799999963,
+      "load": 6.2,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 0,
+      "cold": 5617.525457999989,
+      "warm": 5236.846665999998,
+      "load": 6.2,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 0,
+      "cold": 643.7482500000042,
+      "warm": 545.3406659999746,
+      "load": 5.6,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 0,
+      "cold": 685.5149580000143,
+      "warm": 537.6399589999928,
+      "load": 5.5,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 0,
+      "cold": 1048.0130419999768,
+      "warm": 892.6784169999883,
+      "load": 5.5,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 0,
+      "cold": 1045.2619169999962,
+      "warm": 887.1276669999934,
+      "load": 5.5,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 0,
+      "cold": 523.1886660000018,
+      "warm": 383.9592920000141,
+      "load": 5.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 1,
+      "cold": 391.1942080000008,
+      "warm": 392.9433340000105,
+      "load": 5.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 1,
+      "cold": 1024.887875000015,
+      "warm": 1026.9057089999842,
+      "load": 5.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 1,
+      "cold": 927.1274169999815,
+      "warm": 921.1752500000002,
+      "load": 5.7,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 1,
+      "cold": 563.7999579999596,
+      "warm": 554.6604579999694,
+      "load": 5.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 1,
+      "cold": 549.0757919999887,
+      "warm": 514.3012910000398,
+      "load": 5.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 1,
+      "cold": 5225.043041999976,
+      "warm": 5137.080583000032,
+      "load": 5.3,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 1,
+      "cold": 337.0789169999771,
+      "warm": 343.29074999998556,
+      "load": 5.5,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 1,
+      "cold": 723.4761250000447,
+      "warm": 723.5752080000238,
+      "load": 5.5,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 1,
+      "cold": 5417.480959000008,
+      "warm": 5092.907124999969,
+      "load": 5.5,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 1,
+      "cold": 1923.4417080000276,
+      "warm": 1707.9524579999852,
+      "load": 5.2,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 1,
+      "cold": 823.6742920000106,
+      "warm": 620.7287500000093,
+      "load": 5.2,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 2,
+      "cold": 597.6553750000312,
+      "warm": 589.9197089999798,
+      "load": 5.2,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 2,
+      "cold": 1714.9902500000317,
+      "warm": 1769.1600409999955,
+      "load": 5.2,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 2,
+      "cold": 5136.919541999989,
+      "warm": 5067.161875000049,
+      "load": 7,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 2,
+      "cold": 706.7051249999786,
+      "warm": 725.4801250000019,
+      "load": 6.2,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 2,
+      "cold": 333.7312920000404,
+      "warm": 334.3077919999487,
+      "load": 6.2,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 2,
+      "cold": 5093.744915999996,
+      "warm": 5274.454958999995,
+      "load": 6.2,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 2,
+      "cold": 671.7599589999882,
+      "warm": 535.0199579999899,
+      "load": 5.8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 2,
+      "cold": 697.515791999991,
+      "warm": 568.8902919999673,
+      "load": 5.8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 2,
+      "cold": 1049.6544170000125,
+      "warm": 898.4048339999863,
+      "load": 6.4,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 2,
+      "cold": 1117.9840420000255,
+      "warm": 1170.354541000037,
+      "load": 6.4,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 2,
+      "cold": 539.5275420000544,
+      "warm": 397.2950000000419,
+      "load": 6.1,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 3,
+      "cold": 404.8780000000261,
+      "warm": 396.7483750000247,
+      "load": 6.1,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 3,
+      "cold": 900.3833330000052,
+      "warm": 937.0219170000055,
+      "load": 6.1,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 3,
+      "cold": 922.4431249999907,
+      "warm": 915.7775409999886,
+      "load": 6.1,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 3,
+      "cold": 555.8977500000037,
+      "warm": 564.0594999999739,
+      "load": 5.7,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 3,
+      "cold": 536.0923339999863,
+      "warm": 565.6855000000214,
+      "load": 5.7,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 3,
+      "cold": 5331.456124999968,
+      "warm": 5238.531416999991,
+      "load": 5.7,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 3,
+      "cold": 491.9582909999881,
+      "warm": 341.8647500000079,
+      "load": 5.3,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 3,
+      "cold": 875.3447910000104,
+      "warm": 712.8828329999815,
+      "load": 5.3,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 3,
+      "cold": 5433.819083000009,
+      "warm": 4955.655000000028,
+      "load": 5,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 3,
+      "cold": 1896.0837499999907,
+      "warm": 1739.8007919999654,
+      "load": 4.5,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 3,
+      "cold": 743.6816249999683,
+      "warm": 594.6151250000112,
+      "load": 4.5,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 4,
+      "cold": 598.623459000024,
+      "warm": 581.4973330000066,
+      "load": 4.6,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 4,
+      "cold": 1778.4442500000005,
+      "warm": 2042.1228330000304,
+      "load": 4.6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 4,
+      "cold": 5648.229292000004,
+      "warm": 5172.312957999995,
+      "load": 4.5,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 4,
+      "cold": 871.4806669999962,
+      "warm": 710.5280829999829,
+      "load": 4.7,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 4,
+      "cold": 481.03337499999907,
+      "warm": 345.7577080000192,
+      "load": 4.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 4,
+      "cold": 5608.912249999994,
+      "warm": 5248.608500000031,
+      "load": 4.7,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 4,
+      "cold": 671.3612090000533,
+      "warm": 543.1236249999492,
+      "load": 4.7,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 4,
+      "cold": 712.742499999993,
+      "warm": 587.4313749999856,
+      "load": 4.7,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 4,
+      "cold": 1049.9183329999796,
+      "warm": 923.6573750000098,
+      "load": 4.7,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 4,
+      "cold": 1174.003209000046,
+      "warm": 902.4482080000453,
+      "load": 4.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 4,
+      "cold": 531.9016670000274,
+      "warm": 392.7083749999874,
+      "load": 5,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 5,
+      "cold": 388.7801669999608,
+      "warm": 386.90916599996854,
+      "load": 5,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 5,
+      "cold": 1027.3822909999872,
+      "warm": 1006.8929169999901,
+      "load": 5,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 5,
+      "cold": 920.1429999999818,
+      "warm": 922.3568330000271,
+      "load": 5.3,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 5,
+      "cold": 565.8794170000474,
+      "warm": 551.3145420000073,
+      "load": 5.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 5,
+      "cold": 539.7894170000218,
+      "warm": 543.2282499999856,
+      "load": 5.3,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 5,
+      "cold": 5450.426416000002,
+      "warm": 5176.659958000004,
+      "load": 5.3,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 5,
+      "cold": 501.9664580000099,
+      "warm": 350.66212500003166,
+      "load": 5.6,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 5,
+      "cold": 880.3187080000062,
+      "warm": 717.4851670000353,
+      "load": 5.6,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 5,
+      "cold": 5731.112124999985,
+      "warm": 5461.989833,
+      "load": 5.6,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 5,
+      "cold": 2447.9691250000033,
+      "warm": 1741.3748750000377,
+      "load": 5.2,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 5,
+      "cold": 736.7811249999795,
+      "warm": 604.9727089999942,
+      "load": 4.8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-dx-styles",
+      "round": 6,
+      "cold": 647.826417000033,
+      "warm": 606.3491669999785,
+      "load": 4.8,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "market-linaria",
+      "round": 6,
+      "cold": 1792.9042499999632,
+      "warm": 1789.2653329999885,
+      "load": 4.9,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "market-compiled",
+      "round": 6,
+      "cold": 5398.089333000011,
+      "warm": 5164.0005830000155,
+      "load": 4.9,
+      "hash": "340c4cea3ce0"
+    },
+    {
+      "lane": "wyw-single-dx1.5.0-wyw2.7.1",
+      "round": 6,
+      "cold": 859.3423750000075,
+      "warm": 720.8927920000278,
+      "load": 4.5,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-static-vars",
+      "round": 6,
+      "cold": 503.15279100002954,
+      "warm": 335.39387500000885,
+      "load": 4.3,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-compiled-collision-resistant",
+      "round": 6,
+      "cold": 5667.113916000002,
+      "warm": 5183.392082999984,
+      "load": 4.3,
+      "hash": "cf21626c351e"
+    },
+    {
+      "lane": "diag-dx-styles-parallel",
+      "round": 6,
+      "cold": 675.7667500000098,
+      "warm": 560.8580829999992,
+      "load": 4.1,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-parallel-8",
+      "round": 6,
+      "cold": 725.5143750000279,
+      "warm": 712.3166670000064,
+      "load": 4.1,
+      "hash": "4d8fcb4a3285"
+    },
+    {
+      "lane": "diag-dx-styles-single-parallel",
+      "round": 6,
+      "cold": 1151.1883749999688,
+      "warm": 1001.1272089999984,
+      "load": 6.7,
+      "hash": "318684afa52b"
+    },
+    {
+      "lane": "diag-linaria-parallel",
+      "round": 6,
+      "cold": 1208.3950419999892,
+      "warm": 1028.6683750000084,
+      "load": 6.7,
+      "hash": "29d0bb09b539"
+    },
+    {
+      "lane": "diag-linaria-static-vars-parallel",
+      "round": 6,
+      "cold": 525.3660840000375,
+      "warm": 397.21462500002235,
+      "load": 6.7,
+      "hash": "29d0bb09b539"
+    }
+  ],
+  "sizes": {
+    "market-dx-styles": {
+      "jsRaw": 301559,
+      "jsGzip": 81719,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "4d8fcb4a3285"
+    },
+    "market-linaria": {
+      "jsRaw": 287341,
+      "jsGzip": 84026,
+      "cssRaw": 373779,
+      "cssGzip": 23841,
+      "hash": "29d0bb09b539"
+    },
+    "market-compiled": {
+      "jsRaw": 386698,
+      "jsGzip": 85611,
+      "cssRaw": 22297,
+      "cssGzip": 5267,
+      "hash": "340c4cea3ce0"
+    },
+    "wyw-single-dx1.5.0-wyw2.7.1": {
+      "jsRaw": 304749,
+      "jsGzip": 82031,
+      "cssRaw": 391576,
+      "cssGzip": 20057,
+      "hash": "318684afa52b"
+    },
+    "diag-linaria-static-vars": {
+      "jsRaw": 287341,
+      "jsGzip": 84026,
+      "cssRaw": 373779,
+      "cssGzip": 23841,
+      "hash": "29d0bb09b539"
+    },
+    "diag-compiled-collision-resistant": {
+      "jsRaw": 408162,
+      "jsGzip": 86447,
+      "cssRaw": 23280,
+      "cssGzip": 5854,
+      "hash": "cf21626c351e"
+    },
+    "diag-dx-styles-parallel": {
+      "jsRaw": 301559,
+      "jsGzip": 81719,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "4d8fcb4a3285"
+    },
+    "diag-dx-styles-parallel-8": {
+      "jsRaw": 301559,
+      "jsGzip": 81719,
+      "cssRaw": 391461,
+      "cssGzip": 20043,
+      "hash": "4d8fcb4a3285"
+    },
+    "diag-dx-styles-single-parallel": {
+      "jsRaw": 304749,
+      "jsGzip": 82031,
+      "cssRaw": 391576,
+      "cssGzip": 20057,
+      "hash": "318684afa52b"
+    },
+    "diag-linaria-parallel": {
+      "jsRaw": 287341,
+      "jsGzip": 84026,
+      "cssRaw": 373779,
+      "cssGzip": 23841,
+      "hash": "29d0bb09b539"
+    },
+    "diag-linaria-static-vars-parallel": {
+      "jsRaw": 287341,
+      "jsGzip": 84026,
+      "cssRaw": 373779,
+      "cssGzip": 23841,
+      "hash": "29d0bb09b539"
+    }
+  },
+  "browser": {
+    "market-dx-styles": {
+      "samples": [
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.8
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.8
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 6.2
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.7
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.7
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-linaria": {
+      "samples": [
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 5.8
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.8
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 6.2
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6
+        },
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 5.7
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.7
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 6
+        },
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 7.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "market-compiled": {
+      "samples": [
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 5.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 5.8
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 6.2
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 6.2
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 6.2
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.7
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 5.7
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 7.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 5,
+      "examples": [
+        "#2056: A|inline|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto|none|3px|rgb(17, 104, 141)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}  ≠  A|inline|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto|none|3px|rgb(209, 37, 31)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}",
+        "#2110: A|inline|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto|none|3px|rgb(17, 104, 141)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}  ≠  A|inline|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|auto|auto|none|3px|rgb(209, 37, 31)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}",
+        "#3633: A|block|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|94.0938px|18px|none|3px|rgb(17, 104, 141)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}  ≠  A|block|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|12px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|18px|none|1|none|94.0938px|18px|none|3px|rgb(209, 37, 31)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}",
+        "#3634: A|block|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|14px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|21px|none|1|none|107.406px|21px|none|3px|rgb(17, 104, 141)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}  ≠  A|block|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|14px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|21px|none|1|none|107.406px|21px|none|3px|rgb(209, 37, 31)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}",
+        "#3635: A|block|static|rgb(17, 104, 141)|rgba(0, 0, 0, 0)|rgb(17, 104, 141)|0px|0px|0px|0px|0px|0px|0px|normal|16px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|24px|none|1|none|115.406px|24px|none|3px|rgb(17, 104, 141)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}  ≠  A|block|static|rgb(209, 37, 31)|rgba(0, 0, 0, 0)|rgb(209, 37, 31)|0px|0px|0px|0px|0px|0px|0px|normal|16px|400|system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif|24px|none|1|none|115.406px|24px|none|3px|rgb(209, 37, 31)|0px :hover{color:rgb(138, 24, 21);borderTopColor:rgb(138, 24, 21);textDecorationLine:underline;outlineColor:rgb(138, 24, 21)} :focus-visible{outlineStyle:solid;outlineWidth:2px;outlineColor:rgb(86, 61, 245);outlineOffset:2px}"
+      ]
+    },
+    "wyw-single-dx1.5.0-wyw2.7.1": {
+      "samples": [
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.1
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.8
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6.2
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.7
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.7
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 7.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-linaria-static-vars": {
+      "samples": [
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6.1
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.8
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6.2
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.7
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.7
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 7.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-compiled-collision-resistant": {
+      "samples": [
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 6.1
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.8
+        },
+        {
+          "fcp": 164,
+          "lcp": 164,
+          "load": 6.2
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 6.2
+        },
+        {
+          "fcp": 172,
+          "lcp": 172,
+          "load": 6.2
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 5.7
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 5.7
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 7.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-dx-styles-parallel": {
+      "samples": [
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.1
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.8
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.7
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 5.7
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 7.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-dx-styles-parallel-8": {
+      "samples": [
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.1
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.8
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6.2
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.7
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.7
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 7.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-dx-styles-single-parallel": {
+      "samples": [
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.1
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.8
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 7.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-linaria-parallel": {
+      "samples": [
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.1
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.8
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6.2
+        },
+        {
+          "fcp": 160,
+          "lcp": 160,
+          "load": 6.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 156,
+          "lcp": 156,
+          "load": 6
+        },
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 7.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    },
+    "diag-linaria-static-vars-parallel": {
+      "samples": [
+        {
+          "fcp": 144,
+          "lcp": 144,
+          "load": 6.1
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 5.8
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 5.8
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 6.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6.2
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 152,
+          "lcp": 152,
+          "load": 6
+        },
+        {
+          "fcp": 148,
+          "lcp": 148,
+          "load": 7.7
+        }
+      ],
+      "fingerprint": [],
+      "chromium": "156.0.8078.4",
+      "differing": 0,
+      "examples": []
+    }
+  }
+}

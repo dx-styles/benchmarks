@@ -65,24 +65,24 @@ Raw data: `results/2026-11-10-15-25-wyw.json`.
 
 Variants that explain report lanes, measured next to them: Linaria with its tokens written as static CSS variables, Compiled with its opt-in `collisionResistantHash`, and wyw-in-js transforms in worker threads (`parallel`, experimental since 2.6.0; `true` means min(4, cores − 1) workers).
 
-_2026-11-06 12:21 UTC · Apple M3 Max, 16 cores, 64 GB · macOS 26.6.2 · Node 24.4.1 · npm 11.4.2 · Chromium 156.0.8078.4 · bench 3f6f5f2_
+_2026-11-10 15:45 UTC · Apple M3 Max, 16 cores, 64 GB · macOS 26.6.2 · Node 24.4.1 · npm 11.4.2 · Chromium 156.0.8078.4 · bench d16bd58_
 
 _120 cards · 7 interleaved rounds of one cold and one warm build per lane · median (minimum) · builds started at 1-minute load ≤ 8_
 
 | Library | Cold build, s | Warm build, s | JS raw / gzip, KB | CSS raw / gzip, KB | Total raw / gzip, KB | FCP, ms | LCP, ms | Renders like dx-styles |
 | --- | --: | --: | --: | --: | --: | --: | --: | --- |
-| Linaria 8.3.0, static CSS variables | 0.52 (0.37) | 0.38 (0.36) | 280.6 / 82.1 | 365.0 / 23.3 | 645.6 / 105.3 | 160 (148) | 160 | yes |
-| Linaria 8.3.0, static CSS variables, parallel | 0.44 (0.43) | 0.43 (0.42) | 280.6 / 82.1 | 365.0 / 23.3 | 645.6 / 105.3 | 160 (156) | 160 | yes |
-| dx-styles 1.5.0, parallel | 0.61 (0.57) | 0.58 (0.54) | 294.5 / 79.8 | 382.3 / 19.6 | 676.8 / 99.4 | 164 (156) | 164 | yes |
-| dx-styles 1.5.0, parallel: 8 | 0.63 (0.58) | 0.61 (0.58) | 294.5 / 79.8 | 382.3 / 19.6 | 676.8 / 99.4 | 164 (152) | 164 | yes |
-| dx-styles 1.5.0 | 0.69 (0.66) | 0.67 (0.61) | 294.5 / 79.8 | 382.3 / 19.6 | 676.8 / 99.4 | 162 (156) | 162 | yes |
-| dx-styles 1.5.0, one module · wyw 2.7.1 | 0.94 (0.77) | 0.78 (0.74) | 297.6 / 80.1 | 382.4 / 19.6 | 680.0 / 99.7 | 164 (156) | 164 | yes |
-| dx-styles 1.5.0, one module, parallel | 1.01 (0.97) | 0.99 (0.93) | 297.6 / 80.1 | 382.4 / 19.6 | 680.0 / 99.7 | 164 (152) | 164 | yes |
-| Linaria 8.3.0, parallel | 1.11 (0.97) | 1.03 (0.92) | 280.6 / 82.1 | 365.0 / 23.3 | 645.6 / 105.3 | 162 (152) | 162 | yes |
-| Linaria 8.3.0 | 1.88 (1.82) | 1.88 (1.81) | 280.6 / 82.1 | 365.0 / 23.3 | 645.6 / 105.3 | 160 (156) | 160 | yes |
-| Compiled 2.0.0, collisionResistantHash | 6.11 (5.82) | 5.98 (5.74) | 398.6 / 84.4 | 22.7 / 5.7 | 421.3 / 90.1 | 168 (156) | 168 | yes |
-| Compiled 2.0.0 | 6.10 (5.71) | 6.01 (5.90) | 377.6 / 83.6 | 21.8 / 5.1 | 399.4 / 88.7 | 168 (160) | 168 | no: 5 elements differ |
+| Linaria 8.3.0, static CSS variables | 0.48 (0.33) | 0.34 (0.32) | 280.6 / 82.1 | 365.0 / 23.3 | 645.6 / 105.3 | 152 (148) | 152 | yes |
+| Linaria 8.3.0, static CSS variables, parallel | 0.52 (0.39) | 0.39 (0.38) | 280.6 / 82.1 | 365.0 / 23.3 | 645.6 / 105.3 | 152 (144) | 152 | yes |
+| dx-styles 1.5.0, parallel | 0.64 (0.54) | 0.54 (0.51) | 294.5 / 79.8 | 382.3 / 19.6 | 676.8 / 99.4 | 152 (148) | 152 | yes |
+| dx-styles 1.5.0, parallel: 8 | 0.69 (0.56) | 0.56 (0.54) | 294.5 / 79.8 | 382.3 / 19.6 | 676.8 / 99.4 | 150 (148) | 150 | yes |
+| dx-styles 1.5.0 | 0.74 (0.60) | 0.60 (0.58) | 294.5 / 79.8 | 382.3 / 19.6 | 676.8 / 99.4 | 150 (144) | 150 | yes |
+| dx-styles 1.5.0, one module · wyw 2.7.1 | 0.86 (0.71) | 0.72 (0.71) | 297.6 / 80.1 | 382.4 / 19.6 | 680.0 / 99.7 | 150 (148) | 150 | yes |
+| dx-styles 1.5.0, one module, parallel | 1.05 (0.92) | 0.92 (0.89) | 297.6 / 80.1 | 382.4 / 19.6 | 680.0 / 99.7 | 148 (148) | 148 | yes |
+| Linaria 8.3.0, parallel | 1.05 (0.90) | 1.01 (0.89) | 280.6 / 82.1 | 365.0 / 23.3 | 645.6 / 105.3 | 152 (144) | 152 | yes |
+| Linaria 8.3.0 | 1.90 (1.71) | 1.76 (1.71) | 280.6 / 82.1 | 365.0 / 23.3 | 645.6 / 105.3 | 148 (144) | 148 | yes |
+| Compiled 2.0.0 | 5.43 (5.14) | 5.09 (4.96) | 377.6 / 83.6 | 21.8 / 5.1 | 399.4 / 88.7 | 160 (152) | 160 | no: 5 elements differ |
+| Compiled 2.0.0, collisionResistantHash | 5.45 (5.09) | 5.24 (5.14) | 398.6 / 84.4 | 22.7 / 5.7 | 421.3 / 90.1 | 158 (156) | 158 | yes |
 
-Load during the builds: 6.9–9.6.
+Load during the builds: 4.1–7.6.
 
-Raw data: `results/2026-11-06-11-56-diag.json`.
+Raw data: `results/2026-11-10-15-37-diag.json`.
